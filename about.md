@@ -15,13 +15,13 @@ titles:
 key: page-about
 ---
 
-![My Profile Picture](https://github.com/jingzhong1011/jingzhong1011.github.io/blob/master/profile%20picture.JPG)
+<center><img src="/profile%20picture.JPG" alt="My Profile Picture"></center>
 <h5 align="center">Jing-Zhong Wang 王敬中</h5>
 
 ## Education 
 - Master student of Biostatistics and Health Data Science
-  - *Institute of Epidemiology and Prevent Medicine, National Taiwan University*
+  - ***Institute of Epidemiology and Prevent Medicine, National Taiwan University***
 - Bachelor of Science in Public Health
-  - *National Taiwan University*
+  - ***National Taiwan University***
 - High School Diploma
-  - *The Affiliated Senior High School of National Taiwan Normal University*
+  - ***The Affiliated Senior High School of National Taiwan Normal University***
