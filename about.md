@@ -16,7 +16,7 @@ key: page-about
 ---
 
 ![My Profile Picture](https://github.com/jingzhong1011/jingzhong1011.github.io/blob/master/profile%20picture.JPG)
-<h5 align="center">Jing-Zhong Wang 王敬中<\h5>
+<h5 align="center">Jing-Zhong Wang 王敬中</h5>
 
 ## Education 
 - Master student of Biostatistics and Health Data Science
