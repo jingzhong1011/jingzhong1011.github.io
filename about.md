@@ -20,8 +20,8 @@ key: page-about
 
 ## Education 
 - Master student of Biostatistics and Health Data Science
-*Institute of Epidemiology and Prevent Medicine, National Taiwan University*
+  - *Institute of Epidemiology and Prevent Medicine, National Taiwan University*
 - Bachelor of Science in Public Health
-*National Taiwan University*
+  - *National Taiwan University*
 - High School Diploma
-*The Affiliated Senior High School of National Taiwan Normal University*
+  - *The Affiliated Senior High School of National Taiwan Normal University*
