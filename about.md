@@ -15,7 +15,8 @@ titles:
 key: page-about
 ---
 
-![My Profile Picture](/profile%20picture.JPG){:width="640px"}
+![My Profile Picture](/profile%20picture.JPG){:width="640px"}  
+**Jing-Zhong Wang 王敬中**
 
 ## Education 
 - **Master student of Biostatistics and Health Data Science (Currently)**
