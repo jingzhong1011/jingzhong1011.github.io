@@ -14,7 +14,8 @@ titles:
   # @end locale config
 key: page-about
 ---
-![My Profile Picture](/profile%20picture.JPG){:width="182px"}
+
+![My Profile Picture](/profile%20picture.JPG){:width="640px"}
 
 ## Education 
 - **Master student of Biostatistics and Health Data Science (Currently)**
