@@ -16,7 +16,7 @@ key: page-about
 ---
 
 
-![My Profile Picture](/profile%20picture.JPG){:width="640px"}  
+![My Profile Picture](/ProfilePicture.png){:width="640px"}  
 
 ## Education 
 - **Master student of Biostatistics and Health Data Science (Currently)**  
