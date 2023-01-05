@@ -14,9 +14,9 @@ titles:
   # @end locale config
 key: page-about
 ---
+## Jing-Zhong Wang 王敬中
 
 ![My Profile Picture](/profile%20picture.JPG){:width="640px"}  
-**Jing-Zhong Wang 王敬中**
 
 ## Education 
 - **Master student of Biostatistics and Health Data Science (Currently)**
