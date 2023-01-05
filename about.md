@@ -19,9 +19,9 @@ key: page-about
 ![My Profile Picture](/profile%20picture.JPG){:width="640px"}  
 
 ## Education 
-- **Master student of Biostatistics and Health Data Science (Currently)**
-  ***Institute of Epidemiology and Prevent Medicine, National Taiwan University***
-- **Bachelor of Science in Public Health**
-  ***National Taiwan University***
-- **High School Diploma**
-  ***The Affiliated Senior High School of National Taiwan Normal University***
+- **Master student of Biostatistics and Health Data Science (Currently)**  
+  *Institute of Epidemiology and Prevent Medicine, National Taiwan University*
+- **Bachelor of Science in Public Health**  
+  *National Taiwan University*
+- **High School Diploma**  
+  *The Affiliated Senior High School of National Taiwan Normal University*
