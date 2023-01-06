@@ -21,20 +21,33 @@ key: page-about
 1999年生，新北市人。沒有擅長的事，不擅長的事很多。興趣是籃球但打得不是太好。最近在學德語及日語。
 
 ## Education 
-- **Master student of Biostatistics and Health Data Science** (Currently)  
-  *Institute of Epidemiology and Prevent Medicine, National Taiwan University*  
-  **國立臺灣大學流行病學與預防醫學研究所 碩士生(主修生物醫學統計與資料科學)**  
-  2022-Present
-- **Bachelor of Science in Public Health**  
-  *National Taiwan University*  
-  **國立臺灣大學公共衛生學系 學士**  
-  2018-2022
-- **High School Diploma**  
-  *The Affiliated Senior High School of National Taiwan Normal University*  
-  **國立臺灣師範大學附屬高級中學**  
-  2015-2018
+- 2022-Present  
+  **國立臺灣大學流行病學與預防醫學研究所 碩士生(主修生物醫學統計與資料科學)** 
+  **Master student of Biostatistics and Health Data Science** ***(Currently)***  
+    *Institute of Epidemiology and Prevent Medicine, National Taiwan University*    
+  
+- 2018-2022 
+  **國立臺灣大學公共衛生學系 學士**
+  主修生物統計與健康資訊
+  - 生物統計學程
+  - 傳染病學程(主修流行病學)  
+  - 健康大數據學程
+  **Bachelor of Science in Public Health**  
+    *National Taiwan University*  
+    Specialized in Biostatistics
+    - Biological Statistics Program
+    - Infectious Diseases Program(Specialized in Epidemiology)
+    - Big Data in Health Program
+  
+- 2015-2018 
+  **國立臺灣師範大學附屬高級中學** 
+  *High School Diploma**  
+    *The Affiliated Senior High School of National Taiwan Normal University*  
+   
 
 ## Experiences
-- 2022 陽明交大統研盃 臺大聯隊 領隊
-- 2021 臺大公衛男籃隊長 
-- 2020 臺大公共衛生種子營《inPHection》 副召
+- March, 2021-Present 臺灣疾病負擔中心 兼任研究助理
+- December, 2022 陽明交大統研盃 臺大聯隊 領隊
+- February, 2021-October, 2021 哈佛大學公共衛生學院 生物統計研究所 實習
+- January, 2021-January, 2022 臺大公衛男籃 隊長 
+- 2020 臺大公共衛生種子營《inPHection》 副召集人
