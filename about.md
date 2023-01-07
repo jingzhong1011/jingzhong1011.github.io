@@ -23,7 +23,7 @@ key: page-about
 ## Education 
 - **2022-Present**  
   **國立臺灣大學流行病學與預防醫學研究所 碩士生(主修生物醫學統計與資料科學)**   
-  **Master student of Biostatistics and Health Data Science** ***(Currently)***  
+  **Master student of Biostatistics and Health Data Science**
     *Institute of Epidemiology and Prevent Medicine, National Taiwan University*    
   
 - **2018-2022**  
