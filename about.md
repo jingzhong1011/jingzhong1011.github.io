@@ -17,7 +17,9 @@ key: page-about
 
 
 ![My Profile Picture](/ProfilePicture_v3.jpg)
+
 ## Personal Information
+### Jing-Zhong Wang 王敬中
 1999年生，新北市人。沒有擅長的事，不擅長的事很多。興趣是籃球但打得不是太好，最喜歡的球員是Stephen Curry。最近在學德語及日語。
 
 
