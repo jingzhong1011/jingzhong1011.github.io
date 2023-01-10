@@ -20,7 +20,8 @@ key: page-about
 
 ## Personal Information
 ### Jing-Zhong Wang 王敬中
-1999年生，新北市人。沒有擅長的事，不擅長的事很多。興趣是籃球但打得不是太好，最喜歡的球員是Stephen Curry。最近在學德語及日語。
+1999年生，新北市人。沒有擅長的事，不擅長的事很多。  
+興趣是籃球但打得不是太好，最喜歡的球員是Stephen Curry。最近在學德語及日語。
 
 
 ## Education
@@ -63,14 +64,14 @@ key: page-about
 
 ### Academic
 <details>
-  <summary><b>March, 2021-Present</b><br>
+  <summary><b>2021-Present</b><br>
    臺灣疾病負擔中心 兼任研究助理
   </summary>
   <p>
   </p>
 </details>
 <details>
-  <summary><b>February, 2021-October, 2021</b><br>
+  <summary><b>2021</b><br>
    哈佛大學公共衛生學院 生物統計研究所 實習生
   </summary>
   <p>
@@ -79,9 +80,9 @@ key: page-about
 
 
 ### Activities
-- **December, 2022**  
+- **2022**  
   陽明交大統研盃 臺大聯隊 領隊
-- **January, 2021-January, 2022**   
+- **2021**   
   臺大公衛男籃 隊長 
 - **2020**   
   2020臺大公共衛生種子營《inPHection》 副召集人
