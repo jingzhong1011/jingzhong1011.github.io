@@ -15,7 +15,7 @@ titles:
 key: page-about
 ---
 
-<img src="IMG_5834.jpg" alt="Profile Picture" width="500"/>
+<img src="IMG_5834.JPG" alt="Profile Picture" width="500"/>
 
 ## Personal Information
 ### Jing-Zhong Wang 王敬中
