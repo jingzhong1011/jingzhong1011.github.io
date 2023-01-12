@@ -15,8 +15,7 @@ titles:
 key: page-about
 ---
 
-
-![My Profile Picture](/ProfilePicture_v3.jpg)
+<img src="IMG_5834.jpg" alt="Profile Picture" width="500"/>
 
 ## Personal Information
 ### Jing-Zhong Wang 王敬中
@@ -26,22 +25,19 @@ key: page-about
 
 ## Education
 <details>
-  <summary><b>2022-Present<br>&emsp;國立臺灣大學流行病學與預防醫學研究所 碩士生</b></summary>
-    <p><b>
+  <summary><b>2022-Present</b><br>&emsp;國立臺灣大學流行病學與預防醫學研究所 碩士生</summary>
+    <p>
     &emsp;主修生物醫學統計與資料科學<br>
     &emsp;Master student of Biostatistics and Health Data Science<br>
-    </b>
     &emsp;&emsp;<i>Institute of Epidemiology and Prevent Medicine<br>
     &emsp;&emsp;National Taiwan University</i>
     </p>
 </details>
 <details>
-  <summary><b>2018-2022<br>&emsp;國立臺灣大學公共衛生學系 學士</b></summary>
+  <summary><b>2018-2022</b><br>&emsp;國立臺灣大學公共衛生學系 學士</summary>
     <p>
     &emsp;主修生物統計與健康資訊<br>
-    <b>
     &emsp;Bachelor of Science in Public Health<br>
-    </b>
     &emsp;Specialized in Biostatistics and Health Data<br>
     &emsp;&emsp;<i>National Taiwan University</i>
     <ul>
@@ -52,10 +48,9 @@ key: page-about
     </p>
 </details>
 <details>
-  <summary><b>2015-2018<br>&emsp;國立臺灣師範大學附屬高級中學</b></summary>
-    <p><b>
+  <summary><b>2015-2018</b><br>&emsp;國立臺灣師範大學附屬高級中學</summary>
+    <p>
     &emsp;High School Diploma<br>
-    </b>
     &emsp;&emsp;<i>The Affiliated Senior High School of National Taiwan Normal University</i>
     </p>
 </details>
