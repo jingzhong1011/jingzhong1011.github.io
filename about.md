@@ -21,7 +21,7 @@ key: page-about
 ### Jing-Zhong Wang 王敬中
 1999年生，新北市人。沒有擅長的事，不擅長的事很多。  
 最近在學德語及日語。
-:basketball :volleyball :german :japan
+:basketball::volleyball::german::japan:
 
 ## Education
 <details>
