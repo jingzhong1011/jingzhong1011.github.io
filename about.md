@@ -21,7 +21,7 @@ key: page-about
 ### Jing-Zhong Wang 王敬中
 1999年生，新北市人。沒有擅長的事，不擅長的事很多。  
 最近在學德語及日語。  
-:basketball::volleyball::german::japan:
+:basketball::volleyball:
 
 ## Education
 <details>
@@ -59,49 +59,46 @@ key: page-about
 
 ### Academic
 <details>
-  <summary><b>2021-Present</b><br>
-   臺灣疾病負擔中心 兼任研究助理
+  <summary><b>2021-Present</b><br>&emsp;臺灣疾病負擔中心 兼任研究助理
   </summary>
-  <p>
-  Learn on:
-  <li> Disease burden
-  <li> Data visualization using <i>R Shiny</i> and related packages
-  <li> Disease burden research using <i>SAS</i> and <i>NHIRD</i>
-  </p>
+    <p>
+    &emsp;Learn on:
+    <li> Disease burden
+    <li> Data visualization using <i>R Shiny</i> and related packages
+    <li> Disease burden research using <i>SAS</i> and <i>NHIRD</i>
+    </p>
 </details>
+
 <details>
-  <summary><b>2021</b><br>
-   哈佛大學公共衛生學院 生物統計研究所 實習生
+  <summary><b>2021</b><br>&emsp;哈佛大學公共衛生學院 生物統計研究所 實習生
   </summary>
-  <p>
-  （大四上必修 公共衛生實習）<br>
-  Work on Mediation analysis in high dimensional data
-  
+    <p>
+    &emsp;（大四上必修 公共衛生實習）<br>
+    &emsp;Work on Mediation analysis in high dimensional data
   </p>
 </details>
 
 ### Activities
 <details>
-  <summary><b>2022</b><br>
-   陽明交大統研盃 臺大聯隊 領隊
+  <summary><b>2022</b><br>&emsp;陽明交大統研盃 臺大聯隊 領隊
   </summary>
-  <p>
-  排球 亞軍 
-  </p>
+    <p>
+    &emsp;排球 亞軍 
+    </p>
 </details>
+
 <details>
-  <summary><b>2021</b><br>
-   台大公衛男籃 隊長
+  <summary><b>2021</b><br>&emsp;台大公衛男籃 隊長
   </summary>
-  <p>
-  2021 公衛盃 亞軍 
-  </p>
+    <p>
+    &emsp;2021 公衛盃 亞軍 
+    </p>
 </details>
+
 <details>
-  <summary><b>2020</b><br>
-   2020臺大公共衛生種子營《inPHection》 副召集人
+  <summary><b>2020</b><br>&emsp;2020臺大公共衛生種子營《inPHection》 副召集人
   </summary>
-  <p>
-  </p>
+    <p>
+    </p>
 </details>
 
