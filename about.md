@@ -63,9 +63,11 @@ key: page-about
   </summary>
     <p>
     &emsp;Learn on:
+    <ul>
     <li> Disease burden
     <li> Data visualization using <i>R Shiny</i> and related packages
     <li> Disease burden research using <i>SAS</i> and <i>NHIRD</i>
+    </ul>
     </p>
 </details>
 
