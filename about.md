@@ -19,9 +19,10 @@ key: page-about
 
 ## Personal Information
 ### Jing-Zhong Wang 王敬中
-1999年生，新北市人。沒有擅長的事，不擅長的事很多。  
-最近在學德語及日語。  
-最喜歡的球類是籃球，再來是棒球和排球:basketball::baseball::volleyball:。
+1999年生，新北市人。身高172公分，體重63公斤，位置是得分後衛。  
+最近在學德語及日語。最喜歡的球類是籃球，接著是棒球和排球。:basketball::baseball::volleyball:  
+沒有擅長的事，不擅長的事很多。  
+
 
 ## Education
 <details>
@@ -29,8 +30,8 @@ key: page-about
     <p>
     &emsp;主修生物醫學統計與資料科學<br>
     &emsp;Master student of Biostatistics and Health Data Science<br>
-    &emsp;&emsp;<i>Institute of Epidemiology and Prevent Medicine<br>
-    &emsp;&emsp;National Taiwan University</i>
+    &emsp;<i>Institute of Epidemiology and Prevent Medicine<br>
+    &emsp;National Taiwan University</i>
     </p>
 </details>
 <details>
@@ -43,8 +44,8 @@ key: page-about
     <li>健康大數據學程</li>
     </ul>
     &emsp;Bachelor of Science in Public Health<br>
-    &emsp;Specialized in Biostatistics and Health Data<br>
-    &emsp;&emsp;<i>National Taiwan University</i>
+    &emsp;<i>National Taiwan University</i><br>
+    &emsp;&emsp;Specialized in Biostatistics and Health Data<br>
     <ul>
     <li>Biological Statistics Program</li>
     <li>Infectious Diseases Program (Specialized in Epidemiology)</li>
@@ -56,7 +57,7 @@ key: page-about
   <summary><b>2015-2018</b><br>&emsp;國立臺灣師範大學附屬高級中學</summary>
     <p>
     &emsp;High School Diploma<br>
-    &emsp;&emsp;<i>The Affiliated Senior High School of National Taiwan Normal University</i>
+    &emsp;<i>The Affiliated Senior High School of National Taiwan Normal University</i>
     </p>
 </details>
 
