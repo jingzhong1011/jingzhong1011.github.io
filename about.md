@@ -18,9 +18,9 @@ key: page-about
 <img src="IMG_5834.JPG" alt="Profile Picture" width="500"/>
 
 ## Personal Information
-### Jing-Zhong Wang 王敬中
-1999年生，新北市人。身高172公分，體重63公斤，位置是得分後衛。  
-最近在學德語及日語。最喜歡的球類是籃球，接著是棒球和排球。:basketball::baseball::volleyball:  
+### Jing-Zhong Wang 王敬中 :basketball::baseball::volleyball:
+1999年生，新北市人。身高172公分，體重63公斤，主要（也只能）打得分後衛。  
+最近在學德語及日語。最喜歡的球類是籃球，接著是棒球和排球。  
 沒有擅長的事，不擅長的事很多。  
 
 
