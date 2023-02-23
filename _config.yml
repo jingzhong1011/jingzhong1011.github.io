@@ -183,6 +183,7 @@ permalink   : date
 
 include:
   - _pages
+  
 exclude:
   - CHANGELOG.md
   - HOW_TO_RELEASE.md
