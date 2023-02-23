@@ -63,7 +63,7 @@ paths:
   home    : "/index.html" # home layout url, "/" (default)
   archive : # "/archive.html" (default)
   rss     : # "/feed.xml" (default)
-  test    : "/test/index.html"
+
 
 
 
