@@ -37,3 +37,15 @@ header:
       zh-HK   : *ZH_HANT
       # @end locale config
     url: /about.html
+  
+  - titles:
+      en      : &EN       CV
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      zh-Hant : &ZH_HANT  CV
+      zh-TW   : *ZH_HANT
+      zh-HK   : *ZH_HANT
+      # @end locale config
+    url: /cv.html
