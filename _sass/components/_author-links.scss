@@ -8,6 +8,9 @@
       .facebook-button {
         @include clickable($text-color-1, $facebook-color);
       }
+      .instagram-button {
+        @include clickable($text-color-1, $instagram-color);
+      }
       .twitter-button {
         @include clickable($text-color-1, $twitter-color);
       }
