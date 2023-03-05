@@ -40,13 +40,13 @@ author:
   avatar    : # path or url of avatar image (square)
   bio       : I am currently a master student.
   email     : jzwang1011@gmail.com
-  facebook  : https://www.facebook.com/100009934444779 # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
-  instagram : https://www.instagram.com/jingzhong1011
+  facebook  : 100009934444779 # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
+  instagram : jingzhong1011
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
   googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
   medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
   linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : https://github.com/jingzhong1011 # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  github    : jingzhong1011 # "user_name" the last part of your profile url, e.g. https://github.com/user_name
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
