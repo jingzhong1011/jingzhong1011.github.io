@@ -9,7 +9,7 @@ default:
     rss:  /feed.xml
   mathjax: false
   mathjax_autoNumber: false
-  mermaid: false
+  mermaid: true
   chart: false
   toc:
     selectors: 'h1,h2,h3'
@@ -22,7 +22,7 @@ default:
       align: left
       theme: light
     articles:
-      show_cover: true
+      show_cover: false
       show_excerpt: false
       show_readmore: false
       show_info: false
