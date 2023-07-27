@@ -21,11 +21,25 @@ highchart() %>%
 以上是一個泛用的`highcharter`基本語法，當然在套件也提供了一個更簡便（當然可調整選項更少）的語法：
 
 ```R
-hchart(data, "圖表類型", hcaes(x = "x軸", y = "y軸"))
+hchart(data, "圖表類型", hcaes(x = x軸, y = y軸, group = 分組))
 ```
 若不需要太多的調整，僅要單純繪製出圖表，相信以此基礎語法便以足夠了。以下會詳細的來介紹各式圖表語法的使用及繪製。
  
 ## 折線圖
+```R
+library(dplyr)
+library(highcharter)
+library(gapminder)
+
+data(gapminder)
+data.vis <- gapminder %>% subset(country %in% c("Australia", "Belgium", "Japan", "Argentina", "Egypt"))
+hchart(data.vis, "line", hcaes(x = year, y = pop, group = country))
+```
+
+<iframe src = "highcharter_lines.html"
+             frameborder="0">
+     </iframe>
+
 ## 散佈圖
 ## 長條圖
 
