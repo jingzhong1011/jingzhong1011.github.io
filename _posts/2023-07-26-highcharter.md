@@ -1,5 +1,5 @@
 ---
-title: R與資料視覺化：Highcharter
+title: R語言與資料視覺化：Highcharter
 tags: 學習
 ---
 
