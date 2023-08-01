@@ -36,7 +36,7 @@ data.vis <- gapminder %>% subset(country %in% c("Australia", "Belgium", "Japan",
 hchart(data.vis, "line", hcaes(x = year, y = pop, group = country))
 ```
 
-![data.vis.line](highcharter_line.png)
+<iframe src="highcharter_line.html"></iframe>
 
 
 ## 散佈圖
