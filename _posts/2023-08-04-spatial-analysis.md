@@ -48,7 +48,7 @@ Popn_TWN2 <- st_read("Data/Popn_TWN2/Popn_TWN2.shp", options = "ENCODING=BIG-5")
   mutate(POP = A0A14_CNT + A15A64_CNT + A65UP_CNT)
 tm_shape(Popn_TWN2) + tm_polygons("POP")
 ```
-![sample_polygons]([sample_polygons.png](https://github.com/jingzhong1011/jingzhong1011.github.io/blob/master/_posts/_posts_imgs/sample_polygons.png))
+![sample_polygons]([sample_polygons.png](https://github.com/jingzhong1011/jingzhong1011.github.io/raw/master/_posts/_posts_imgs/sample_polygons.png))
 
 **Borders**
 ```R
@@ -79,4 +79,5 @@ tm_shape(Popn_TWN2) +
   tm_compass(position = c("right", "top")) + 
   tm_layout(title = "Taiwan Population Density map", title.position = c("left", "top"), title.bg.color = T)
 ```
-![sample_tmap](https://github.com/jingzhong1011/jingzhong1011.github.io/blob/master/_posts/_posts_imgs/sample_tmap.png)
+![sample_tmap](https://github.com/jingzhong1011/jingzhong1011.github.io/raw/master/_posts/_posts_imgs/sample_tmap.png)
+
