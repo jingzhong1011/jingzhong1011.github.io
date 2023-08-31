@@ -12,10 +12,22 @@ tags: 遊記
 
 此次搭乘的是捷星的紅眼航班，上機後發現座位很小，坐定後大腿差不多頂到前面座位的椅背，椅背可以調整的幅度很小，因此乘機過程皆約保持九十度的姿勢，稱不上舒適。機上有額外付費購買飲品及點心的服務。起飛後不久後一排座位就有嬰兒開始哭鬧，一路鬧到降落為止，因此幾乎沒什麼睡。綜合以上體驗，只能說若是有下次，應該不會選擇捷星做搭機的選擇。
 
-![](https://github.com/jingzhong1011/jingzhong1011.github.io/raw/master/_posts/_posts_imgs/IMG_7548.jpeg){:width="400px"}
+<div class="card">
+  <div class="card__image">
+    <img class="image image--lg" src="https://github.com/jingzhong1011/jingzhong1011.github.io/raw/master/_posts/_posts_imgs/IMG_7548.jpeg"/>
+  </div>
+</div>
+
+
 
 
 *（小插曲：同行中有人帶了一條吐司進托運行李，令人啼笑皆非。）*
+
+<div class="card">
+  <div class="card__image">
+    <img class="image image--lg" src="https://github.com/jingzhong1011/jingzhong1011.github.io/raw/master/_posts/_posts_imgs/IMG_7559.jpeg"/>
+  </div>
+</div>
 
 ![](https://github.com/jingzhong1011/jingzhong1011.github.io/raw/master/_posts/_posts_imgs/IMG_7559.jpeg){:width="400px"}
 
@@ -26,7 +38,7 @@ tags: 遊記
 
 ![](https://github.com/jingzhong1011/jingzhong1011.github.io/raw/master/_posts/_posts_imgs/IMG_7584.jpeg){:width="400px"}
 
-我們從成田第2．3ターミナル站先坐JR到品川站，接著從品川搭上東海道新幹線往目的地新大阪。東海道新幹線是連接東京及新大阪的高速鐵路，沿途經過東京-横浜-静岡-名古屋-京都-新大阪等城市，在三島-新富士區間可以看到富士山（但真的沒看到🥲）
+我們從成田第2．3ターミナル站先坐JR到品川站，接著從品川搭上東海道新幹線往目的地新大阪。東海道新幹線是連接東京及新大阪的高速鐵路，沿途經過東京-横浜-静岡-名古屋-京都-大阪等城市，在三島-新富士區間可以看到富士山（但真的沒看到🥲）
 
 
 ### 黒門市場
