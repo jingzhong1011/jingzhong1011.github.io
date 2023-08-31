@@ -1,5 +1,5 @@
 ---
-title: 日本六日遊
+title: 記日本六日遊
 tags: 遊記
 ---
 
@@ -12,13 +12,15 @@ tags: 遊記
 
 此次搭乘的是捷星的紅眼航班，上機後發現座位很小，坐定後大腿差不多頂到前面座位的椅背，椅背可以調整的幅度很小，因此乘機過程皆約保持九十度的姿勢，稱不上舒適。機上有額外付費購買飲品及點心的服務。起飛後不久後一排座位就有嬰兒開始哭鬧，一路鬧到降落為止，因此幾乎沒什麼睡。綜合以上體驗，只能說若是有下次，應該不會選擇捷星做搭機的選擇。
 
+
 <div class="card">
   <div class="card__image">
     <img class="image image--lg" src="https://github.com/jingzhong1011/jingzhong1011.github.io/raw/master/_posts/_posts_imgs/IMG_7548.jpeg"/>
+  </div>
+  <div class="card__image">
     <img class="image image--lg" src="https://github.com/jingzhong1011/jingzhong1011.github.io/raw/master/_posts/_posts_imgs/IMG_7559.jpeg"/>
   </div>
 </div>
-
 
 *（小插曲：同行中有人帶了一條吐司進托運行李，令人啼笑皆非。）*
 
@@ -77,6 +79,8 @@ tags: 遊記
 <div class="card">
   <div class="card__image">
     <img class="image image--lg" src="https://github.com/jingzhong1011/jingzhong1011.github.io/raw/master/_posts/_posts_imgs/IMG_7622.jpeg"/>
+  </div>
+  <div class="card__image">
     <img class="image image--lg" src="https://github.com/jingzhong1011/jingzhong1011.github.io/raw/master/_posts/_posts_imgs/IMG_7625.jpeg"/>
   </div>
 </div>
@@ -90,7 +94,7 @@ tags: 遊記
 
 <div class="card">
   <div class="card__image">
-    <img class="image image--lg" src="https://github.com/jingzhong1011/jingzhong1011.github.io/raw/master/_posts/_posts_imgs/IMG7632.jpeg"/>
+    <img class="image image--lg" src="https://github.com/jingzhong1011/jingzhong1011.github.io/raw/master/_posts/_posts_imgs/IMG_7632.jpeg"/>
   </div>
 </div>
 
