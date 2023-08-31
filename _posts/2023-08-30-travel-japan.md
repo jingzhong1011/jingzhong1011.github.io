@@ -1,5 +1,5 @@
 ---
-title: 記日本六日遊
+title: 日本六日遊
 tags: 遊記
 ---
 
@@ -14,9 +14,6 @@ tags: 遊記
 
 
 <div class="card">
-  <div class="card__image">
-    <img class="image image--lg" src="https://github.com/jingzhong1011/jingzhong1011.github.io/raw/master/_posts/_posts_imgs/IMG_7548.jpeg"/>
-  </div>
   <div class="card__image">
     <img class="image image--lg" src="https://github.com/jingzhong1011/jingzhong1011.github.io/raw/master/_posts/_posts_imgs/IMG_7559.jpeg"/>
   </div>
@@ -80,15 +77,18 @@ tags: 遊記
   <div class="card__image">
     <img class="image image--lg" src="https://github.com/jingzhong1011/jingzhong1011.github.io/raw/master/_posts/_posts_imgs/IMG_7622.jpeg"/>
   </div>
+</div>
+
+
+看展的日本人以情侶居多，是個適合牽手的約會地點，可惜我們是七個大男生去看展。 
+*（補充說明：當天是七夕，格外難過。）*
+
+<div class="card">
   <div class="card__image">
     <img class="image image--lg" src="https://github.com/jingzhong1011/jingzhong1011.github.io/raw/master/_posts/_posts_imgs/IMG_7625.jpeg"/>
   </div>
 </div>
 
-
-看展的日本人以情侶居多，是個適合牽手的約會地點，可惜我們是七個大男生去看展。 
-
-*（補充說明：當天是七夕，格外難過。）*
 
 看完展後已經接近晚上九點，很難找吃晚餐的地方，我們在天王寺駅附近嘗試找吃的，只是多數店家已不收客，最後找了一家賣そば的店簡單吃了晚餐。這天走的步數是本次旅行次多，約33000步，19.6公里。
 
@@ -97,4 +97,10 @@ tags: 遊記
     <img class="image image--lg" src="https://github.com/jingzhong1011/jingzhong1011.github.io/raw/master/_posts/_posts_imgs/IMG_7632.jpeg"/>
   </div>
 </div>
+
+<!-- ## Day 2：環球影城與大阪南區
+
+這天行程安排的是環球影城，早上六點多便至JR車站搭車，到達環球影城時發現排隊人潮已然人山人海，因為沒有買快速通關，因此只能排隊等待入園。表定是八點半開放，但八點十分左右我們便能夠入園。入園後先用APP搶下超級任天堂世界的整理券，幸好運氣不錯在九點半到十點半間得以入場。
+
+入園後一小時內似乎是最好排遊樂設施的時間，我們首先玩了蜘蛛人的遊樂設施，據其他人說，在平常時間這個遊樂設施可能要排上一至二小時。而後我們買了許多紀念品，包括：無敵星星造型的爆米花桶、妙蛙種子造型的飲料、任天堂的帽子等等。-->
 
