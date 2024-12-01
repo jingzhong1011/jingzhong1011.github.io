@@ -8,7 +8,7 @@ tags: 雜記
 <!--more-->
 
 附上一首我很喜歡的歌，⟪日常、遠方及其他⟫：
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/16RqSiRn7nj76pkbaucCRt?utm_source=generator" width="80%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/16RqSiRn7nj76pkbaucCRt?utm_source=generator" width="80%" height="176" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 ---
 ### 致謝
