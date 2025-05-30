@@ -19,10 +19,6 @@ key: page-about
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
-    /*
-     * 王敬中（Jing-Zhong Wang）的「關於我」頁面樣式
-     * 設計理念：簡潔、質感，與 TeXt Theme 視覺風格高度融合。
-     */
 
     /* 主要容器設定 */
     .about-container {
@@ -50,7 +46,7 @@ key: page-about
       height: 120px;
       border-radius: 50%; /* 圓形頭像 */
       object-fit: cover; /* 確保圖片填充且不變形 */
-      border: 3px solid var(--main-color, #333); /* 使用 TeXt Theme 的主色變數作為邊框，若無則預設 */
+      border: 3px solid var(--main-color, #eee); /* 使用 TeXt Theme 的主色變數作為邊框，若無則預設 */
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* 輕微陰影 */
       margin-bottom: 15px; /* 與下方文字的間距 */
     }
@@ -65,9 +61,9 @@ key: page-about
     .profile-intro h1 span {
       display: block; /* 英文名換行 */
       font-size: 0.7em; /* 英文名小一點 */
-      color: var(--text-color-light, #777); /* 繼承 TeXt Theme 淺色文字 */
+      color: var(--text-color-light, #333); /* 繼承 TeXt Theme 淺色文字 */
       margin-top: 5px;
-      font-weight: 400; /* 不加粗 */
+      font-weight: 700; /* 不加粗 */
     }
 
     /* 各個內容區塊標題 */
@@ -77,7 +73,7 @@ key: page-about
       margin-top: 40px; /* 區塊上間距 */
       margin-bottom: 20px; /* 標題與內容間距 */
       padding-bottom: 5px;
-      border-bottom: 2px solid var(--accent-color, #42b983); /* 使用 TeXt Theme 的強調色，若無則預設綠色 */
+      border-bottom: 2px solid var(--accent-color, #fc4d50); /* 使用 TeXt Theme 的強調色，若無則預設綠色 */
       display: inline-block; /* 讓線條只在標題下方 */
       font-weight: 600; /* 加粗 */
       letter-spacing: 0.5px; /* 微調字距 */
@@ -93,13 +89,13 @@ key: page-about
     .details-list li {
       margin-bottom: 10px; /* 列表項目間距 */
       font-size: 1.05em; /* 列表文字大小 */
-      color: var(--text-color, #555); /* 繼承 TeXt Theme 文字顏色 */
+      color: var(--text-color, #222); /* 繼承 TeXt Theme 文字顏色 */
       display: flex; /* Flexbox 對齊圖示和文字 */
       align-items: flex-start; /* 讓內容從頂部對齊 */
     }
 
     .details-list li i {
-      color: var(--accent-color, #42b983); /* 圖示顏色使用強調色 */
+      color: var(--accent-color, #fc4d50); /* 圖示顏色使用強調色 */
       margin-right: 12px; /* 圖示與文字間距 */
       width: 20px; /* 固定圖示寬度，方便文字對齊 */
       text-align: center;
@@ -116,7 +112,7 @@ key: page-about
       font-size: 1.05em; /* 段落文字大小 */
       margin-bottom: 15px; /* 段落間距 */
       line-height: 1.8; /* 行高 */
-      color: var(--text-color, #555); /* 繼承文字顏色 */
+      color: var(--text-color, #222); /* 繼承文字顏色 */
     }
     
     /* 響應式設計 (配合 TeXt Theme 的斷點) */
@@ -172,15 +168,15 @@ key: page-about
   <section class="personal-details-section">
     <h2 class="section-title">個人資料</h2>
     <ul class="details-list">
-      <li><i class="fas fa-calendar-alt"></i> 1999年10月11日生，新北市人，天秤座。</li>
-      <li><i class="fas fa-ruler-vertical"></i> 身高173公分，最喜歡的球類是籃球。</li>
+      <li><i class="fas fa-calendar-alt"></i> 1999年10月11日生。</li>
+      <li><i class="fa-solid fa-location-dot"></i> 新北市人，身高173公分，天秤座。</li>
     </ul>
   </section>
 
   <section class="about-me-section">
     <h2 class="section-title">關於我</h2>
-    <p>MBTI是INFJ。常常想太多，是個矛盾又懶惰的人</p>
-    <p>最近要畢業了，即將成為無業遊民。</p>
+    <p>MBTI是INFJ。常常想太多，是個矛盾又內耗的人。</p>
+    <p>最近看的書是石黑一雄⟪別讓我走⟫，最近最想要的東西是Mercedes-AMG F1 W14 E Performance的Lego。</p>
   </section>
 
 </div>
