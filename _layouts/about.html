@@ -15,6 +15,151 @@ titles:
 key: page-about
 ---
 
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    /*
+     * 王敬中（Jing-Zhong Wang）的「關於我」頁面樣式
+     * 設計理念：簡潔、質感，與 TeXt Theme 視覺風格高度融合。
+     */
+
+    /* 主要容器設定 */
+    .about-container {
+      max-width: 760px; /* 配合 TeXt Theme 的內容區塊寬度，保持一致性 */
+      margin: 40px auto; /* 調整頁面上下邊距，左右自動置中 */
+      padding: 0 15px; /* 左右保留一些間距，避免內容緊貼邊緣 */
+      font-family: inherit; /* 繼承 TeXt Theme 的字體設定 */
+      line-height: inherit; /* 繼承 TeXt Theme 的行高設定 */
+      color: inherit; /* 繼承 TeXt Theme 的文字顏色 */
+    }
+
+    /* 個人頭像與姓名區塊 */
+    .profile-header {
+      display: flex; /* 使用 Flexbox 排列 */
+      flex-direction: column; /* 堆疊排列：圖片在上，文字在下 */
+      align-items: center; /* 水平置中 */
+      text-align: center;
+      padding-bottom: 30px; /* 底部間距 */
+      margin-bottom: 30px;
+      border-bottom: 1px solid var(--border-color, #eee); /* 使用 TeXt Theme 的邊框變數，若無則預設 */
+    }
+
+    .profile-pic {
+      width: 120px; /* 頭像大小 */
+      height: 120px;
+      border-radius: 50%; /* 圓形頭像 */
+      object-fit: cover; /* 確保圖片填充且不變形 */
+      border: 3px solid var(--main-color, #333); /* 使用 TeXt Theme 的主色變數作為邊框，若無則預設 */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* 輕微陰影 */
+      margin-bottom: 15px; /* 與下方文字的間距 */
+    }
+
+    .profile-intro h1 {
+      font-size: 2.2em; /* 姓名大小 */
+      margin: 0;
+      color: var(--text-color-dark, #333); /* 繼承 TeXt Theme 深色文字 */
+      font-weight: 700; /* 加粗 */
+    }
+
+    .profile-intro h1 span {
+      display: block; /* 英文名換行 */
+      font-size: 0.7em; /* 英文名小一點 */
+      color: var(--text-color-light, #777); /* 繼承 TeXt Theme 淺色文字 */
+      margin-top: 5px;
+      font-weight: 400; /* 不加粗 */
+    }
+
+    /* 各個內容區塊標題 */
+    .section-title {
+      font-size: 1.6em; /* 標題字體大小 */
+      color: var(--text-color-dark, #333); /* 繼承 TeXt Theme 深色文字 */
+      margin-top: 40px; /* 區塊上間距 */
+      margin-bottom: 20px; /* 標題與內容間距 */
+      padding-bottom: 5px;
+      border-bottom: 2px solid var(--accent-color, #42b983); /* 使用 TeXt Theme 的強調色，若無則預設綠色 */
+      display: inline-block; /* 讓線條只在標題下方 */
+      font-weight: 600; /* 加粗 */
+      letter-spacing: 0.5px; /* 微調字距 */
+    }
+
+    /* 個人資料列表 */
+    .details-list {
+      list-style: none; /* 移除列表點 */
+      padding: 0;
+      margin: 0;
+    }
+
+    .details-list li {
+      margin-bottom: 10px; /* 列表項目間距 */
+      font-size: 1.05em; /* 列表文字大小 */
+      color: var(--text-color, #555); /* 繼承 TeXt Theme 文字顏色 */
+      display: flex; /* Flexbox 對齊圖示和文字 */
+      align-items: flex-start; /* 讓內容從頂部對齊 */
+    }
+
+    .details-list li i {
+      color: var(--accent-color, #42b983); /* 圖示顏色使用強調色 */
+      margin-right: 12px; /* 圖示與文字間距 */
+      width: 20px; /* 固定圖示寬度，方便文字對齊 */
+      text-align: center;
+      font-size: 1.1em;
+      flex-shrink: 0; /* 防止圖示縮小 */
+    }
+
+    .details-list li strong {
+      color: var(--text-color-dark, #333); /* 加粗文字顏色 */
+    }
+
+    /* 關於我段落 */
+    .about-me-section p {
+      font-size: 1.05em; /* 段落文字大小 */
+      margin-bottom: 15px; /* 段落間距 */
+      line-height: 1.8; /* 行高 */
+      color: var(--text-color, #555); /* 繼承文字顏色 */
+    }
+    
+    /* 響應式設計 (配合 TeXt Theme 的斷點) */
+    @media (max-width: 768px) {
+      .about-container {
+        margin: 30px auto;
+        padding: 0 10px; /* 手機上左右間距減少 */
+      }
+
+      .profile-header {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
+
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+      }
+
+      .profile-intro h1 {
+        font-size: 1.8em;
+      }
+
+      .profile-intro h1 span {
+        font-size: 0.8em;
+      }
+
+      .section-title {
+        font-size: 1.4em;
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+
+      .details-list li,
+      .about-me-section p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
 <div class="about-container">
   
   <header class="profile-header">
@@ -27,17 +172,17 @@ key: page-about
   <section class="personal-details-section">
     <h2 class="section-title">個人資料</h2>
     <ul class="details-list">
-      <li><i class="fas fa-calendar-alt"></i> 1999年10月11日</li>
-      <li><i class="fas fa-map-marker-alt"></i> 新北市人</li>
-      <li><i class="fas fa-star"></i> <strong>天秤座</li>
+      <li><i class="fas fa-calendar-alt"></i> 1999年10月11日生，新北市人，天秤座。</li>
+      <li><i class="fas fa-ruler-vertical"></i> 身高173公分，最喜歡的球類是籃球。</li>
     </ul>
   </section>
 
   <section class="about-me-section">
     <h2 class="section-title">關於我</h2>
-    <p>MBTI是INFJ。意味著我是一個矛盾又不斷內耗的人。</p>
-    <p>最喜歡的運動是籃球，最喜歡的籃球員是Stephen Curry。</p>
+    <p>MBTI是INFJ。常常想太多，是個矛盾又懶惰的人</p>
+    <p>最近要畢業了，即將成為無業遊民。</p>
   </section>
 
-
 </div>
+
+</body>
