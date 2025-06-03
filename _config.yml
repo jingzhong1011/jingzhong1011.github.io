@@ -198,6 +198,8 @@ exclude:
   - /screenshots
   - /test
   - /vendor
+  - /shinyApp
+  - /LEvizApp
 
 defaults:
   - scope:
