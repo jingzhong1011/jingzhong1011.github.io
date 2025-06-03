@@ -196,10 +196,8 @@ exclude:
   - /docs
   - /node_modules
   - /screenshots
-  - /test
   - /vendor
   - /shinyApp
-  - /LEvizApp
 
 defaults:
   - scope:
