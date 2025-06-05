@@ -51,19 +51,19 @@ key: page-about
       margin-bottom: 15px; /* 與下方文字的間距 */
     }
 
-    .profile-intro h1 {
+    .profile-intro h2 { /* 從 h1 改為 h2，更符合頁面層級 */
       font-size: 2.2em; /* 姓名大小 */
       margin: 0;
       color: var(--text-color-dark, #333); /* 繼承 TeXt Theme 深色文字 */
       font-weight: 700; /* 加粗 */
     }
 
-    .profile-intro h1 span {
+    .profile-intro h2 span { /* 從 h1 改為 h2 */
       display: block; /* 英文名換行 */
       font-size: 0.7em; /* 英文名小一點 */
       color: var(--text-color-light, #333); /* 繼承 TeXt Theme 淺色文字 */
       margin-top: 5px;
-      font-weight: 700; /* 不加粗 */
+      font-weight: 500; /* 調整為不那麼粗 */
     }
 
     /* 各個內容區塊標題 */
@@ -79,7 +79,7 @@ key: page-about
       letter-spacing: 0.5px; /* 微調字距 */
     }
 
-    /* 個人資料列表 */
+    /* 個人資料列表 (此頁面未使用，但保留樣式) */
     .details-list {
       list-style: none; /* 移除列表點 */
       padding: 0;
@@ -114,7 +114,32 @@ key: page-about
       line-height: 1.8; /* 行高 */
       color: var(--text-color, #222); /* 繼承文字顏色 */
     }
+
+    /* 強調文字 */
+    .highlight-text {
+      font-weight: bold;
+      color: var(--accent-color, #fc4d50); /* 使用強調色 */
+    }
     
+    /* Hashtag 樣式 */
+    .hashtag {
+      display: inline-block; /* 讓元素能設定寬高、padding */
+      background-color: rgba(252, 77, 80, 0.7); /* 使用主題強調色 */
+      color: #ffffff; /* 白色文字 */
+      padding: 3px 8px; /* 內部間距 */
+      border-radius: 5px; /* 圓角 */
+      font-size: 0.9em; /* 比周圍文字略小 */
+      font-weight: 500; /* 適中粗細 */
+      margin-right: 5px; /* 右側間距，避免多個 hashtag 黏在一起 */
+      white-space: nowrap; /* 防止換行 */
+    }
+
+    /* 可選：滑鼠懸停效果 */
+    .hashtag:hover {
+      opacity: 0.8; /* 懸停時略微變暗 */
+      cursor: default; /* 鼠標顯示為箭頭，表示不可點擊 */
+    }
+
     /* 響應式設計 (配合 TeXt Theme 的斷點) */
     @media (max-width: 768px) {
       .about-container {
@@ -132,11 +157,11 @@ key: page-about
         height: 100px;
       }
 
-      .profile-intro h1 {
+      .profile-intro h2 { /* 從 h1 改為 h2 */
         font-size: 1.8em;
       }
 
-      .profile-intro h1 span {
+      .profile-intro h2 span { /* 從 h1 改為 h2 */
         font-size: 0.8em;
       }
 
@@ -144,11 +169,6 @@ key: page-about
         font-size: 1.4em;
         margin-top: 30px;
         margin-bottom: 15px;
-      }
-
-      .highlight-text {
-        font-weight: bold;
-        color: #fc4d50;
       }
 
       .details-list li,
@@ -166,35 +186,27 @@ key: page-about
   <header class="profile-header">
     <img src="/assets/profile_pic.jpg" alt="王敬中 Jing-Zhong Wang" class="profile-pic"/>
     <div class="profile-intro">
-      <h2>王敬中 (Jing-Zhong Wang)</h2>
+      <h2>王敬中 <span>(Jing-Zhong Wang)</span></h2>
     </div>
   </header>
 
   <section class="about-me-section">
     <h3 class="section-title">About Me</h3>
-    <p>A <span class="highlight-text">data scientist/analyst</span>, who specialized in health data.<br>
-      Focusing Real-world data, burden of disease analysis and descriptive epidemiology with statistical modeling. 
-      Hold an M.S. in Biostatistics and Health Data Science from Institute of Epidemiology and Prevent Medicine, National Taiwan University.</p>
-    <p></p>
+    <p>A <span class="highlight-text">data scientist/analyst</span>, who specialized in health data.</p>
+    <p>Focusing <span class="highlight-text">real-world data</span>, <span class="highlight-text">burden of disease analysis</span> and descriptive epidemiology with statistical modeling. Hold an <span class="highlight-text">M.S. in Biostatistics and Health Data Science</span> from Institute of Epidemiology and Prevent Medicine, National Taiwan University.</p>
   </section>
 
   <section class="about-me-section">
     <h3 class="section-title">More Me</h3>
-    <p>Based in New Taipei City, Taiwan, I was born on October 11, 1999.<br>
-      Beyond my work, I have a keen interest in sports. Basketball is my foremost passion; 
-      I'm a strong supporter of Stephen Curry and #DubNation. I also connect with the #PorVida sentiment. 
-      When I play, I'm a guard, wearing #8. In addition to basketball, I enjoy volleyball and baseball. 
-      More recently, I've also started following soccer and F1 racing, expanding my range of sporting interests.<br>
-      Music also plays a significant role in my life. 
-      I enjoy K-pop, with TWICE being a favorite, and listen to Taiwanese indie bands such as 胡凱兒 (Who Cares) and 公館青少年 (GG Teens). 
-      My Japanese music preferences include マルシィ (Marcy), あいみょん (Aimyon), and 優里 (Yuuri). 
-      Additionally, I'm a fan of artists like Keshi and Cigarettes After Sex.
-
-</p>
-
+    <p>Based in New Taipei City, Taiwan, I was born on October 11, 1999.</p>
+    <p>Beyond my work, I have a keen interest in sports. </p>
+    <p>Basketball is my foremost passion; I'm a strong supporter of Stephen Curry and <span class="highlight-text">#DubNation</span>, also connect with the <span class="highlight-text">#PorVida</span> sentiment.</p>
+    <p>When I play, I'm a guard, wearing <span class="highlight-text">#8</span>. In addition to basketball, I enjoy volleyball and baseball. More recently, I've also started following soccer and F1 racing, expanding my range of sporting interests.</p>
+    <p>Music also plays a significant role in my life. I enjoy K-pop, with TWICE being a favorite, and listen to Taiwanese indie bands such as 胡凱兒 (Who Cares) and 公館青少年 (GG Teens). My Japanese music preferences include マルシィ (Marcy), あいみょん (Aimyon), and 優里 (Yuuri). Additionally, I'm a fan of chill out artists like Keshi and Cigarettes After Sex.</p>
+    <p>More and more me:<br></p>
+    <p><span class="hashtag">#INFJ</span><span class="hashtag">#RamenLover</span><span class="hashtag">#Deutsch</span><span class="hashtag">#日本語</span><span class="hashtag">#NoMilkTeaNoLife</span></p>
   </section>
    
-
 </div>
 
 </body>
