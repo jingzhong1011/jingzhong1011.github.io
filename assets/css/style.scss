@@ -267,30 +267,42 @@ a:hover { color: var(--accent); }
 
 @media (max-width: 1350px) { .post-toc-sidebar { display: none; } }
 
-/* --- 針對手機版 Header 的專屬修復 --- */
+/* --- 針對手機版 Header 的強力修正 --- */
 @media (max-width: 768px) {
-  /* 1. 讓 Header 內元素可以換行或調整間距 */
+  /* 1. 減少 Header 左右留白，釋放空間 */
   .site-header-inner {
-    padding: 15px 20px; /* 減少手機版內縮 */
-    flex-direction: column; /* 讓 Logo 和 導覽列變成上下排 */
-    gap: 15px;
+    padding: 15px 15px; 
+    flex-wrap: wrap; /* 讓內容在空間不足時自動換行 */
+    justify-content: center; /* 整體置中 */
   }
 
-  /* 2. 調整 Logo 大小與間距 */
+  /* 2. 縮小標題字體與圖示，幫導覽列爭取空間 */
   .site-title {
-    font-size: 1.3rem; 
+    font-size: 1.2rem;
+    margin-bottom: 10px; /* 跟下方導覽列拉開一點距離 */
+    width: 100%; /* 強制標題佔據一行，讓導覽列乖乖待在下方 */
+    justify-content: center;
   }
 
-  /* 3. 關鍵：調整導覽列 */
+  .site-icon {
+    width: 22px !important;
+    height: 22px !important;
+  }
+
+  /* 3. 關鍵修復：導覽列 */
   .site-nav {
-    gap: 15px; /* 縮小選單之間的間距 */
-    font-size: 0.9rem; /* 稍微縮小字體 */
+    gap: 12px; /* 顯著縮小選項間距 */
+    font-size: 0.9rem;
+    justify-content: center;
     width: 100%;
-    justify-content: center; /* 選單置中 */
+    flex-wrap: nowrap; /* 確保選項不要亂斷行 */
+    overflow-x: auto; /* 如果真的太擠，允許左右滑動而不跑位 */
+    -webkit-overflow-scrolling: touch; /* 讓滑動更順暢 */
+    padding-bottom: 5px;
   }
 
-  /* 4. 如果有 wrapper，也要確保它在手機版不會太寬 */
-  .wrapper {
-    padding: 0 20px;
+  .site-nav a {
+    white-space: nowrap; /* 強制文字不換行（例如 About Me 就會連在一起） */
+    padding: 5px 2px;
   }
 }
