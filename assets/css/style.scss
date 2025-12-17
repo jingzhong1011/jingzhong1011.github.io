@@ -252,57 +252,62 @@ a:hover { color: var(--accent); }
   }
 }
 
-/* 響應式：手機版改為上下排列 */
-@media (max-width: 600px) {
-  .cv-section-enhanced {
-    flex-direction: column;
-    text-align: center;
-    gap: 25px;
-    .cv-content { text-align: center; }
-  }
+/* --- 漢堡按鈕基本樣式 --- */
+.menu-button {
+  display: none; /* 電腦版隱藏 */
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 1001;
 }
-/* 10. 進度條 & 其他 */
-.reading-progress-container { position: fixed; top: 0; width: 100%; height: 4px; z-index: 1000; }
-.reading-progress-bar { height: 100%; background: var(--accent); width: 0%; }
 
-@media (max-width: 1350px) { .post-toc-sidebar { display: none; } }
+.icon-bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-primary);
+  border-radius: 2px;
+  transition: 0.3s;
+}
 
-/* --- 針對手機版 Header 的強力修正 --- */
+/* --- 手機版 RWD 調整 (768px 以下) --- */
 @media (max-width: 768px) {
-  /* 1. 減少 Header 左右留白，釋放空間 */
   .site-header-inner {
-    padding: 5px 5px; 
-    flex-wrap: wrap; /* 讓內容在空間不足時自動換行 */
-    justify-content: center; /* 整體置中 */
+    position: relative; /* 讓選單可以相對於 header 定位 */
   }
 
-  /* 2. 縮小標題字體與圖示，幫導覽列爭取空間 */
-  .site-title {
-    font-size: 1.2rem;
-    margin-bottom: 8px; /* 跟下方導覽列拉開一點距離 */
-    width: 100%; /* 強制標題佔據一行，讓導覽列乖乖待在下方 */
-    justify-content: center;
+  .menu-button {
+    display: flex; /* 手機版顯示按鈕 */
   }
 
-  .site-icon {
-    width: 22px !important;
-    height: 22px !important;
-  }
-
-  /* 3. 關鍵修復：導覽列 */
+  /* 關鍵：調整手機版選單樣式 */
   .site-nav {
-    gap: 8px; /* 顯著縮小選項間距 */
-    font-size: 0.9rem;
-    justify-content: center;
+    display: none; /* 預設隱藏 */
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* 從 Header 底部往下長 */
+    left: 0;
     width: 100%;
-    flex-wrap: nowrap; /* 確保選項不要亂斷行 */
-    overflow-x: auto; /* 如果真的太擠，允許左右滑動而不跑位 */
-    -webkit-overflow-scrolling: touch; /* 讓滑動更順暢 */
-    padding-bottom: 5px;
+    background-color: var(--card-bg);
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
   }
 
-  .site-nav a {
-    white-space: nowrap; /* 強制文字不換行（例如 About Me 就會連在一起） */
-    padding: 5px 2px;
+  /* 選單內項目樣式 */
+  .nav-item {
+    padding: 15px 40px;
+    border-bottom: 1px solid var(--text-thirdary);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  /* 🎯 點擊後的狀態：當 nav 加上 active 類別時顯示 */
+  .site-nav.active {
+    display: flex;
   }
 }
