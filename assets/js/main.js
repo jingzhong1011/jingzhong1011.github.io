@@ -28,9 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const menuBtn = document.querySelector('.menu-button');
   const nav = document.querySelector('.site-nav');
 
+  console.log("按鈕物件:", menuBtn); // 除錯用：如果在瀏覽器 F12 看到 null，代表抓不到
+  console.log("選單物件:", nav);
+
   if (menuBtn && nav) {
     menuBtn.addEventListener('click', function() {
       nav.classList.toggle('active');
+      console.log("目前選單的類別清單:", nav.classList); // 檢查是否有出現 active
     });
   }
 });

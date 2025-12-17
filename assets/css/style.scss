@@ -308,6 +308,7 @@ a:hover { color: var(--accent); }
 
   /* 🎯 點擊後的狀態：當 nav 加上 active 類別時顯示 */
   .site-nav.active {
-    display: flex;
+    display: flex !important; /* 加入 !important 確保強制顯示 */
   }
 }
+
