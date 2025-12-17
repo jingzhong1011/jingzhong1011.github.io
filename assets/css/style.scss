@@ -266,3 +266,31 @@ a:hover { color: var(--accent); }
 .reading-progress-bar { height: 100%; background: var(--accent); width: 0%; }
 
 @media (max-width: 1350px) { .post-toc-sidebar { display: none; } }
+
+/* --- 針對手機版 Header 的專屬修復 --- */
+@media (max-width: 768px) {
+  /* 1. 讓 Header 內元素可以換行或調整間距 */
+  .site-header-inner {
+    padding: 15px 20px; /* 減少手機版內縮 */
+    flex-direction: column; /* 讓 Logo 和 導覽列變成上下排 */
+    gap: 15px;
+  }
+
+  /* 2. 調整 Logo 大小與間距 */
+  .site-title {
+    font-size: 1.3rem; 
+  }
+
+  /* 3. 關鍵：調整導覽列 */
+  .site-nav {
+    gap: 15px; /* 縮小選單之間的間距 */
+    font-size: 0.9rem; /* 稍微縮小字體 */
+    width: 100%;
+    justify-content: center; /* 選單置中 */
+  }
+
+  /* 4. 如果有 wrapper，也要確保它在手機版不會太寬 */
+  .wrapper {
+    padding: 0 20px;
+  }
+}

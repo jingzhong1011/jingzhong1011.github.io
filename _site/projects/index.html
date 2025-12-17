@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Projects | Zhong's Blog</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+  <div class="wrapper site-header-inner">
+    <a class="site-title" href="/">
+      <img src="/assets/img/icon/logo.svg" alt="Site Icon" class="site-icon">
+      Zhong&#39;s Blog
+    </a>
+    
+    <label for="menu-toggle" class="menu-button" aria-label="Toggle Navigation">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </label>
+    
+    <nav class="site-nav" id="main-menu">
+      <a href="/" class="nav-item">Home</a>
+      <a href="/archive/" class="nav-item">Archive</a> 
+      <a href="/projects/" class="nav-item">Projects</a>
+      <a href="/about/" class="nav-item">About</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="page-content">
+    <div class="content-container"> 
+  <h1>Projects</h1>
+
+  <div class="projects-grid">
+    <!-- To add porjects here -->
+    <div class="post-item-minimal">
+      <h3 class="post-list-title">Diabetes Prediction Model</h3>
+      <p class="post-list-excerpt">A machine learning project focusing on predicting diabetes.</p>
+      <div class="post-list-meta" style="display: flex; gap: 10px;">
+        <span class="post-category" data-tag="Python">Python</span>
+        <span class="post-category" data-tag="Tech">ML</span>
+      </div>
+    </div>
+
+    <div class="post-item-minimal">
+      <a href="/LEvis" style="text-decoration: none;">
+        <h3 class="post-list-title">LEvis: Taiwan's Township-level Life Expectancy Interactive Visualization</h3>
+      </a>
+      <p class="post-list-excerpt">A custom-built interactive visualization tool developed using JavaScript and HTML.</p>
+      <div class="post-list-meta" style="display: flex; gap: 10px;">
+        <span class="post-category" data-tag="JS">JavaScript</span>
+        <span class="post-category" data-tag="HTML">HTML/CSS</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+  </main>
+
+  <footer class="site-footer" style="padding: 30px 20px; margin-top: 50px; background-color: var(--card-bg); color: #888; text-align: center;">
+  <p>© 2025 Zhong&#39;s Blog. All rights reserved.</p>
+  <p>Theme Design by Jing-Zhong Wang | Powered by Jekyll.</p>
+</footer>
+  
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
