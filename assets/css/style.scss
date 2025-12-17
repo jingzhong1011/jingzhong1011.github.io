@@ -271,7 +271,7 @@ a:hover { color: var(--accent); }
 @media (max-width: 768px) {
   /* 1. 減少 Header 左右留白，釋放空間 */
   .site-header-inner {
-    padding: 15px 15px; 
+    padding: 5px 5px; 
     flex-wrap: wrap; /* 讓內容在空間不足時自動換行 */
     justify-content: center; /* 整體置中 */
   }
@@ -279,7 +279,7 @@ a:hover { color: var(--accent); }
   /* 2. 縮小標題字體與圖示，幫導覽列爭取空間 */
   .site-title {
     font-size: 1.2rem;
-    margin-bottom: 10px; /* 跟下方導覽列拉開一點距離 */
+    margin-bottom: 8px; /* 跟下方導覽列拉開一點距離 */
     width: 100%; /* 強制標題佔據一行，讓導覽列乖乖待在下方 */
     justify-content: center;
   }
@@ -291,7 +291,7 @@ a:hover { color: var(--accent); }
 
   /* 3. 關鍵修復：導覽列 */
   .site-nav {
-    gap: 12px; /* 顯著縮小選項間距 */
+    gap: 8px; /* 顯著縮小選項間距 */
     font-size: 0.9rem;
     justify-content: center;
     width: 100%;
