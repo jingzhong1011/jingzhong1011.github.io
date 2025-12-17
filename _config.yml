@@ -48,3 +48,4 @@ exclude:
   - /docs
   - /node_modules
   - /shinyApp
+  - vendor
