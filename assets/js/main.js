@@ -23,3 +23,14 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', updateProgressBar);
     updateProgressBar();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.querySelector('.menu-button');
+  const nav = document.querySelector('.site-nav');
+
+  if (menuBtn && nav) {
+    menuBtn.addEventListener('click', function() {
+      nav.classList.toggle('active');
+    });
+  }
+});
