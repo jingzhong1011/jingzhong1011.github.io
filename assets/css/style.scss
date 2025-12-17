@@ -1,0 +1,268 @@
+---
+---
+/* -----------------------------------------------------------
+  Zhong's Blog - Full Integrated Style Sheet (2025 Edition)
+----------------------------------------------------------- */
+
+:root {
+  --bg-color: #ffffff; 
+  --card-bg: #f2f2f2; 
+  --text-primary: #333333;
+  --text-secondary: #a0a0a0;
+  --text-thirdary: #eeeeee; /* 分隔線與邊框專用淡灰色 */
+  --accent: #fc4d50;  /* 主題紅色 */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* 1. 基礎設定 */
+html { scroll-behavior: smooth; }
+body { 
+  margin: 0; 
+  background-color: var(--bg-color); 
+  color: var(--text-primary); 
+  font-family: var(--font-primary); 
+  line-height: 1.6; 
+}
+.wrapper { max-width: 1600px; margin: 0 auto; padding: 0 40px; }
+a { color: var(--text-primary); text-decoration: none; transition: 0.3s ease; }
+a:hover { color: var(--accent); }
+
+/* 🎯 2. 全站內容對齊容器 (用於對齊 About, Projects, Archive, Posts) */
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px 80px 20px;
+}
+
+/* 🎯 統一所有分頁的標題大小 (About Me, Archive, Projects 等) */
+.content-container h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 35px;
+  letter-spacing: -0.5px;
+}
+
+/* 3. HEADER 樣式 */
+.site-header { background-color: var(--card-bg); width: 100%; }
+.site-header-inner { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; }
+.site-title { 
+  font-size: 1.5rem; 
+  font-weight: 800; /* 極粗體 */
+  display: flex; 
+  align-items: center; 
+  letter-spacing: -1.0px;
+  span {
+    font-weight: 400; /* 可以讓後面的字稍細 */
+    margin-left: 2px;
+  }
+}
+.site-icon { width: 28px !important; height: 28px !important; margin-right: 12px; display: block; }
+.site-nav { display: flex; gap: 25px; font-weight: 500; }
+
+/* 4. HERO SECTION (首頁大圖) */
+.hero-section {
+  min-height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
+  background-image: url('../img/hero-bg.png'); background-size: cover; background-position: center;
+  position: relative; text-transform: uppercase; overflow: hidden;
+}
+.hero-section::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.1); z-index: 1; }
+.hero-section .wrapper { position: relative; z-index: 2; width: 100%; }
+.hero-title { font-size: 5rem; font-weight: 900; line-height: 1.1; color: var(--text-secondary); margin: 0; animation: fadeIn 1.2s ease-out; }
+.hero-tagline { font-size: 1.4rem; font-weight: 300; color: var(--text-secondary); margin-top: 15px; letter-spacing: 2px; animation: fadeIn 1.2s ease-out 0.4s forwards; opacity: 0; }
+.neon-accent { color: var(--accent); }
+.accent-glow { color: var(--accent); font-weight: 500; text-shadow: 0 0 15px rgba(252, 77, 80, 0.3); }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+
+/* 🎯 5. 文章內文優化 (行距與分隔線) */
+.post-content {
+    line-height: 2.0; /* 🎯 你的要求：加大行距 */
+    font-size: 1.1rem;
+    color: #333;
+}
+.post-content hr {
+    border: none;
+    border-top: 1px solid var(--text-thirdary); /* 🎯 你的要求：淡灰色線 */
+    margin: 50px 0;
+}
+.post-content img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+.post-content h2, .post-content h3 { margin-top: 2em; margin-bottom: 1em; }
+
+/* 🎯 6. TABLE OF CONTENTS (側邊固定導航) */
+.post-toc-sidebar {
+    position: fixed;
+    left: calc(50% + 440px); /* 位於 800px 容器邊緣右側 */
+    top: 140px;
+    width: 220px;
+    z-index: 10;
+    border-left: 1px solid var(--text-thirdary);
+    padding-left: 20px;
+}
+.toc-title { font-weight: 800; font-size: 0.75rem; color: var(--accent); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 12px; }
+#toc-content-js ul { list-style: none; padding: 0; margin: 0; }
+#toc-content-js li { margin-bottom: 10px; line-height: 1.4; }
+#toc-content-js a { color: var(--text-secondary); font-size: 0.85rem; transition: 0.2s; }
+#toc-content-js a:hover { color: var(--accent); }
+
+/* --- 7. ARCHIVE 標籤篩選器樣式 (移除底線) --- */
+.tag-filter-container {
+    padding-bottom: 20px;
+    border-bottom: none; /* 🎯 移除下方的直線 */
+    margin-bottom: 30px;
+}
+
+.tag-filter-item {
+    cursor: pointer;
+    user-select: none;
+    padding: 8px 18px !important;
+    font-size: 0.95rem !important; /* 🎯 較大的字體 */
+    border-radius: 30px !important;
+    transition: all 0.3s ease;
+    opacity: 0.8; 
+}
+
+.tag-filter-item:hover, .tag-filter-item.active {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+/* 🎯 8. 標籤顏色定義 (新增學習與雜記) --- */
+.post-category {
+    padding: 4px 10px; 
+    border-radius: 4px; 
+    font-size: 0.8rem; 
+    text-transform: uppercase; 
+    font-weight: 700; 
+    color: #fff; 
+    background-color: #bdc3c7; /* 預設灰色 */
+    display: inline-block;
+}
+
+/* Show All (Overall) 使用深灰色 */
+.post-category[data-tag="all"] { background-color: #333333; opacity: 1; }
+
+/* 🎯 針對你的標籤自定義顏色 */
+.post-category[data-tag="學習"] { background-color: #3498db; } /* 藍色 */
+.post-category[data-tag="雜記"] { background-color: #95a5a6; } /* 質感灰 */
+
+.post-category[data-tag="Python"] { background-color: #3776AB; }
+.post-category[data-tag="Tech"] { background-color: #2ecc71; }
+.post-category[data-tag="JS"] { background-color: #F7DF1E; }
+.post-category[data-tag="HTML"] { background-color: #E34F26; }
+
+/* 🎯 9. About Me 特殊樣式 & CV Button */
+/* --- About 頁面專屬美化 --- */
+
+.cv-section-enhanced {
+  margin-top: 80px;
+  padding: 40px;
+  background-color: var(--card-bg); /* 使用你的淡灰色背景 */
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease;
+
+  .cv-content {
+    text-align: left;
+    h3 { margin: 0 0 8px 0; font-size: 1.25rem; }
+    p { margin: 0; color: var(--text-secondary); font-size: 0.95rem; }
+  }
+}
+
+/* --- Research Interests 標籤化樣式 --- */
+.interests-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.interest-tag {
+  background-color: #fdfdfd;      /* 比背景稍微白一點點 */
+  color: var(--text-primary);
+  padding: 8px 18px;
+  border-radius: 50px;           /* 膠囊造型 */
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid #e0e0e0;     /* 淡灰色細邊框 */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: default;
+
+  &:hover {
+    background-color: var(--bg-color);
+    border-color: var(--accent); /* 懸停時邊框變紅 */
+    color: var(--accent);        /* 懸停時文字變紅 */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* CV 區域美化 */
+.cv-section-enhanced {
+  padding: 35px;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cv-button-pretty {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: var(--text-primary);
+  color: #fff !important;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+  
+  &:hover {
+    background-color: var(--accent);
+    transform: scale(1.03);
+  }
+}
+
+/* 🎯 漂亮的 CV 按鈕 */
+.cv-button-pretty {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background-color: var(--text-primary);
+  color: #ffffff !important;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: var(--accent); /* 懸停時變為你的主題紅 */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(252, 77, 80, 0.2);
+    
+    svg { transform: translateX(3px); }
+  }
+
+  svg {
+    transition: transform 0.3s ease;
+  }
+}
+
+/* 響應式：手機版改為上下排列 */
+@media (max-width: 600px) {
+  .cv-section-enhanced {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    .cv-content { text-align: center; }
+  }
+}
+/* 10. 進度條 & 其他 */
+.reading-progress-container { position: fixed; top: 0; width: 100%; height: 4px; z-index: 1000; }
+.reading-progress-bar { height: 100%; background: var(--accent); width: 0%; }
+
+@media (max-width: 1350px) { .post-toc-sidebar { display: none; } }

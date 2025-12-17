@@ -1,0 +1,21 @@
+<header class="site-header">
+  <div class="wrapper site-header-inner">
+    <a class="site-title" href="{{ "/" | relative_url }}">
+      <img src="{{ "/assets/img/icon/logo.svg" | relative_url }}" alt="Site Icon" class="site-icon">
+      {{ site.title | escape }}
+    </a>
+    
+    <label for="menu-toggle" class="menu-button" aria-label="Toggle Navigation">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </label>
+    
+    <nav class="site-nav" id="main-menu">
+      <a href="{{ "/" | relative_url }}" class="nav-item">Home</a>
+      <a href="{{ "/archive/" | relative_url }}" class="nav-item">Archive</a> 
+      <a href="{{ "/projects/" | relative_url }}" class="nav-item">Projects</a>
+      <a href="{{ "/about/" | relative_url }}" class="nav-item">About</a>
+    </nav>
+  </div>
+</header>

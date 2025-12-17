@@ -1,0 +1,156 @@
+current directory: /Users/jing-zhongwang/Desktop/test/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext
+/Users/jing-zhongwang/.rubies/ruby-3.2.0/bin/ruby -I /Users/jing-zhongwang/.rubies/ruby-3.2.0/lib/ruby/3.2.0 extconf.rb
+/Users/jing-zhongwang/.rubies/ruby-3.2.0/bin/ruby: warning: Ruby was built without YJIT support. You may need to install rustc to build Ruby with YJIT.
+-----
+Using OpenSSL from pkg-config -I/opt/homebrew/Cellar/openssl@3/3.6.0/include  && -L/opt/homebrew/Cellar/openssl@3/3.6.0/lib && -lssl -lcrypto
+-----
+checking for -lcrypto... yes
+checking for -lssl... yes
+checking for openssl/ssl.h... yes
+checking for openssl/err.h... yes
+checking for rb_trap_immediate in ruby.h,rubysig.h... no
+checking for rb_thread_blocking_region()... no
+checking for rb_thread_call_without_gvl() in ruby/thread.h... yes
+checking for rb_thread_fd_select()... yes
+checking for rb_fdset_t in ruby/intern.h... yes
+checking for rb_wait_for_single_fd()... yes
+checking for rb_enable_interrupt()... no
+checking for rb_time_new()... yes
+checking for inotify_init() in sys/inotify.h... no
+checking for __NR_inotify_init in sys/syscall.h... no
+checking for writev() in sys/uio.h... yes
+checking for pipe2() in unistd.h... no
+checking for accept4() in sys/socket.h... no
+checking for SOCK_CLOEXEC in sys/socket.h... no
+checking for sys/event.h... yes
+checking for sys/queue.h... yes
+checking for clock_gettime()... yes
+checking for CLOCK_MONOTONIC_RAW in time.h... yes
+checking for CLOCK_MONOTONIC in time.h... yes
+CXXFLAGS=-fdeclspec -Wall -Wextra -Wno-deprecated-declarations -Wno-ignored-qualifiers -Wno-unused-result -Wno-address
+creating Makefile
+
+current directory: /Users/jing-zhongwang/Desktop/test/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext
+make DESTDIR\= sitearchdir\=./.gem.20251215-41120-pq9wzl sitelibdir\=./.gem.20251215-41120-pq9wzl clean
+
+current directory: /Users/jing-zhongwang/Desktop/test/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext
+make DESTDIR\= sitearchdir\=./.gem.20251215-41120-pq9wzl sitelibdir\=./.gem.20251215-41120-pq9wzl
+compiling binder.cpp
+compiling cmain.cpp
+compiling ed.cpp
+compiling em.cpp
+em.cpp:2119:3: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 2119 |                 sprintf(errbuf, "failed to register file watch descriptor with kqueue: %s", strerror(errno));
+      |                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+em.cpp:2186:3: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 2186 |                 sprintf(errbuf, "error registering file %s for watching: %s", fpath, strerror(errno));
+      |                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+em.cpp:2214:3: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 2214 |                 sprintf(errbuf, "failed to open file %s for registering with kqueue: %s", fpath, strerror(errno));
+      |                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+em.cpp:2365:3: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+ 2365 |                 sprintf(errbuf, "failed to register file watch descriptor with kqueue: %s", strerror(errno));
+      |                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+4 warnings generated.
+compiling kb.cpp
+compiling page.cpp
+compiling pipe.cpp
+compiling rubymain.cpp
+rubymain.cpp:220:3: warning: 'rb_rescue' is deprecated: Use of ANYARGS in this function is deprecated [-Wdeprecated-declarations]
+  220 |                 rb_rescue((VALUE (*)(ANYARGS))event_callback, (VALUE)&e, (VALUE (*)(ANYARGS))event_error_handler, Qnil);
+      |                 ^
+/Users/jing-zhongwang/.rubies/ruby-3.2.0/include/ruby-3.2.0/ruby/backward/cxxanyargs.hpp:246:1: note: 'rb_rescue' has been explicitly marked deprecated here
+  246 | RUBY_CXX_DEPRECATED("Use of ANYARGS in this function is deprecated")
+      | ^
+/Users/jing-zhongwang/.rubies/ruby-3.2.0/include/ruby-3.2.0/ruby/backward/2/attributes.h:78:35: note: expanded from macro 'RUBY_CXX_DEPRECATED'
+   78 | #define RUBY_CXX_DEPRECATED(mseg) RBIMPL_ATTR_DEPRECATED((mseg))
+      |                                   ^
+/Users/jing-zhongwang/.rubies/ruby-3.2.0/include/ruby-3.2.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+1 warning generated.
+compiling ssl.cpp
+ssl.cpp:216:9: warning: 'PEM_read_bio_DHparams' is deprecated [-Wdeprecated-declarations]
+  216 |                         dh = PEM_read_bio_DHparams(bio, NULL, NULL, NULL);
+      |                              ^
+/opt/homebrew/Cellar/openssl@3/3.6.0/include/openssl/pem.h:479:21: note: 'PEM_read_bio_DHparams' has been explicitly marked deprecated here
+  479 | DECLARE_PEM_rw_attr(OSSL_DEPRECATEDIN_3_0, DHparams, DH)
+      |                     ^
+/opt/homebrew/Cellar/openssl@3/3.6.0/include/openssl/macros.h:229:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+  229 | #   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+      |                                                 ^
+/opt/homebrew/Cellar/openssl@3/3.6.0/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+   62 | #     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+      |                                                    ^
+ssl.cpp:227:4: warning: 'DH_free' is deprecated [-Wdeprecated-declarations]
+  227 |                         DH_free(dh);
+      |                         ^
+/opt/homebrew/Cellar/openssl@3/3.6.0/include/openssl/dh.h:211:1: note: 'DH_free' has been explicitly marked deprecated here
+  211 | OSSL_DEPRECATEDIN_3_0 void DH_free(DH *dh);
+      | ^
+/opt/homebrew/Cellar/openssl@3/3.6.0/include/openssl/macros.h:229:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+  229 | #   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+      |                                                 ^
+/opt/homebrew/Cellar/openssl@3/3.6.0/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+   62 | #     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+      |                                                    ^
+ssl.cpp:243:12: warning: 'EC_KEY_new_by_curve_name' is deprecated [-Wdeprecated-declarations]
+  243 |                                 ecdh = EC_KEY_new_by_curve_name(nid);
+      |                                        ^
+/opt/homebrew/Cellar/openssl@3/3.6.0/include/openssl/ec.h:1017:1: note: 'EC_KEY_new_by_curve_name' has been explicitly marked deprecated here
+ 1017 | OSSL_DEPRECATEDIN_3_0 EC_KEY *EC_KEY_new_by_curve_name(int nid);
+      | ^
+/opt/homebrew/Cellar/openssl@3/3.6.0/include/openssl/macros.h:229:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+  229 | #   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+      |                                                 ^
+/opt/homebrew/Cellar/openssl@3/3.6.0/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+   62 | #     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+      |                                                    ^
+ssl.cpp:254:5: warning: 'EC_KEY_free' is deprecated [-Wdeprecated-declarations]
+  254 |                                 EC_KEY_free(ecdh);
+      |                                 ^
+/opt/homebrew/Cellar/openssl@3/3.6.0/include/openssl/ec.h:1022:1: note: 'EC_KEY_free' has been explicitly marked deprecated here
+ 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+      | ^
+/opt/homebrew/Cellar/openssl@3/3.6.0/include/openssl/macros.h:229:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+  229 | #   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+      |                                                 ^
+/opt/homebrew/Cellar/openssl@3/3.6.0/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+   62 | #     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+      |                                                    ^
+4 warnings generated.
+linking shared-object rubyeventmachine.bundle
+ld: warning: -multiply_defined is obsolete
+ld: warning: ignoring duplicate libraries: '-lcrypto', '-lssl'
+Undefined symbols for architecture arm64:
+  "_SSL_get1_peer_certificate", referenced from:
+      SslBox_t::GetPeerCert() in ssl.o
+ld: symbol(s) not found for architecture arm64
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [rubyeventmachine.bundle] Error 1
+
+make failed, exit code 2

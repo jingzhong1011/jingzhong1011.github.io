@@ -1,0 +1,50 @@
+# === Basic Information ===
+title: Zhong's Blog
+description: 
+lang: en 
+timezone: Asia/Taipei
+
+# === Custom Jekyll Setting ===
+markdown: kramdown
+kramdown:
+  parse_block_html: true  
+  input: GFM 
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+
+# === Page settings ===
+paginate: 8
+paginate_path: /page:num
+
+# === Plugins ===
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji
+
+# === Defalts for posts ===
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+
+# Exclude
+exclude:
+  # - search.json  <-- 已移除
+  - CHANGELOG.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README-*.md
+  - README.md
+  - gulpfile.js
+  - package-lock.json
+  - package.json
+  - /docs
+  - /node_modules
+  - /shinyApp

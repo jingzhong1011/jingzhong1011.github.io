@@ -1,0 +1,83 @@
+---
+layout: default
+---
+<div class="reading-progress-container">
+  <div class="reading-progress-bar"></div>
+</div>
+
+<article class="post">
+  <aside class="post-toc-sidebar">
+    <p class="toc-title">Contents</p>
+    <nav id="toc-content-js"></nav>
+  </aside>
+
+  <div class="content-container">
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <p class="post-meta" style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 40px;">
+        Published: {{ page.date | date: "%B %-d, %Y" }}
+      </p>
+    </header>
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+    
+    <footer class="post-footer" style="margin-top: 50px; border-top: 1px solid var(--text-thirdary); padding-top: 20px;">
+      {% if page.tags %}
+        <div class="tags-list" style="display: flex; gap: 10px;">
+          {% for tag in page.tags %}
+            <span class="post-category" data-tag="{{ tag }}">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </footer>
+  </div>
+</article>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const postContent = document.querySelector('.post-content');
+  const tocContainer = document.getElementById('toc-content-js');
+  
+  if (postContent && tocContainer) {
+    // 抓取文章內所有的 H2 和 H3
+    const headings = postContent.querySelectorAll('h2, h3');
+    
+    if (headings.length === 0) {
+      document.querySelector('.post-toc-sidebar').style.display = 'none';
+      return;
+    }
+
+    const tocList = document.createElement('ul');
+    tocList.style.listStyle = 'none';
+    tocList.style.padding = '0';
+
+    headings.forEach((heading, index) => {
+      // 為標題生成 ID 用於跳轉
+      const id = heading.id || `section-${index}`;
+      heading.id = id;
+
+      const li = document.createElement('li');
+      li.style.marginBottom = '12px';
+      li.style.paddingLeft = heading.tagName === 'H3' ? '15px' : '0'; // H3 縮排
+
+      const a = document.createElement('a');
+      a.href = `#${id}`;
+      a.textContent = heading.textContent;
+      a.style.color = 'var(--text-secondary)';
+      a.style.fontSize = heading.tagName === 'H3' ? '0.8rem' : '0.85rem';
+      a.style.textDecoration = 'none';
+      
+      // 滑鼠懸停效果
+      a.onmouseover = () => a.style.color = 'var(--accent)';
+      a.onmouseout = () => a.style.color = 'var(--text-secondary)';
+
+      li.appendChild(a);
+      tocList.appendChild(li);
+    });
+
+    tocContainer.appendChild(tocList);
+  }
+});
+</script>

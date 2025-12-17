@@ -1,0 +1,30 @@
+current directory: /Users/jing-zhongwang/Desktop/test/vendor/bundle/ruby/3.2.0/gems/psych-5.3.0/ext/psych
+/Users/jing-zhongwang/.rubies/ruby-3.2.0/bin/ruby -I /Users/jing-zhongwang/.rubies/ruby-3.2.0/lib/ruby/3.2.0 extconf.rb
+/Users/jing-zhongwang/.rubies/ruby-3.2.0/bin/ruby: warning: Ruby was built without YJIT support. You may need to install rustc to build Ruby with YJIT.
+creating Makefile
+
+current directory: /Users/jing-zhongwang/Desktop/test/vendor/bundle/ruby/3.2.0/gems/psych-5.3.0/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20251211-22304-qbkuqt sitelibdir\=./.gem.20251211-22304-qbkuqt clean
+cd libyaml && /Library/Developer/CommandLineTools/usr/bin/make clean
+/bin/sh: line 0: cd: libyaml: No such file or directory
+make: [clean-so] Error 1 (ignored)
+
+current directory: /Users/jing-zhongwang/Desktop/test/vendor/bundle/ruby/3.2.0/gems/psych-5.3.0/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20251211-22304-qbkuqt sitelibdir\=./.gem.20251211-22304-qbkuqt
+compiling psych.c
+compiling psych_emitter.c
+compiling psych_parser.c
+compiling psych_to_ruby.c
+compiling psych_yaml_tree.c
+linking shared-object psych.bundle
+ld: warning: -multiply_defined is obsolete
+
+current directory: /Users/jing-zhongwang/Desktop/test/vendor/bundle/ruby/3.2.0/gems/psych-5.3.0/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20251211-22304-qbkuqt sitelibdir\=./.gem.20251211-22304-qbkuqt install
+/usr/bin/install -c -m 0755 psych.bundle ./.gem.20251211-22304-qbkuqt
+
+current directory: /Users/jing-zhongwang/Desktop/test/vendor/bundle/ruby/3.2.0/gems/psych-5.3.0/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20251211-22304-qbkuqt sitelibdir\=./.gem.20251211-22304-qbkuqt clean
+cd libyaml && /Library/Developer/CommandLineTools/usr/bin/make clean
+/bin/sh: line 0: cd: libyaml: No such file or directory
+make: [clean-so] Error 1 (ignored)

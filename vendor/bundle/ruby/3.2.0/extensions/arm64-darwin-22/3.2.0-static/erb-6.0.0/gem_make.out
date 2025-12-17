@@ -1,0 +1,21 @@
+current directory: /Users/jing-zhongwang/Desktop/test/vendor/bundle/ruby/3.2.0/gems/erb-6.0.0/ext/erb/escape
+/Users/jing-zhongwang/.rubies/ruby-3.2.0/bin/ruby -I /Users/jing-zhongwang/.rubies/ruby-3.2.0/lib/ruby/3.2.0 extconf.rb
+/Users/jing-zhongwang/.rubies/ruby-3.2.0/bin/ruby: warning: Ruby was built without YJIT support. You may need to install rustc to build Ruby with YJIT.
+checking for rb_ext_ractor_safe() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/jing-zhongwang/Desktop/test/vendor/bundle/ruby/3.2.0/gems/erb-6.0.0/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251205-51058-yvisbe sitelibdir\=./.gem.20251205-51058-yvisbe clean
+
+current directory: /Users/jing-zhongwang/Desktop/test/vendor/bundle/ruby/3.2.0/gems/erb-6.0.0/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251205-51058-yvisbe sitelibdir\=./.gem.20251205-51058-yvisbe
+compiling escape.c
+linking shared-object erb/escape.bundle
+ld: warning: -multiply_defined is obsolete
+
+current directory: /Users/jing-zhongwang/Desktop/test/vendor/bundle/ruby/3.2.0/gems/erb-6.0.0/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251205-51058-yvisbe sitelibdir\=./.gem.20251205-51058-yvisbe install
+/usr/bin/install -c -m 0755 escape.bundle ./.gem.20251205-51058-yvisbe/erb
+
+current directory: /Users/jing-zhongwang/Desktop/test/vendor/bundle/ruby/3.2.0/gems/erb-6.0.0/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251205-51058-yvisbe sitelibdir\=./.gem.20251205-51058-yvisbe clean
