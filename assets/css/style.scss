@@ -43,6 +43,13 @@ a:hover { color: var(--accent); }
   letter-spacing: -0.5px;
 }
 
+/* --- Projects 分隔線優化 --- */
+.projects-grid hr {
+  border: none;
+  border-top: 1px solid var(--text-thirdary);
+  margin: 30px 0; /* 調整上下間距使其更有呼吸感 */
+}
+
 /* 3. HEADER 樣式 */
 .site-header { background-color: var(--card-bg); width: 100%; }
 .site-header-inner { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; }
@@ -309,9 +316,8 @@ a:hover { color: var(--accent); }
     border-bottom: none;
   }
 
-  /* 🎯 點擊後的狀態：當 nav 加上 active 類別時顯示 */
+  /* 點擊後的狀態：當 nav 加上 active 類別時顯示 */
   .site-nav.active {
-    display: flex !important; /* 加入 !important 確保強制顯示 */
+    display: flex !important; 
   }
 }
-
