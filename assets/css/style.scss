@@ -27,14 +27,14 @@ body {
 a { color: var(--text-primary); text-decoration: none; transition: 0.3s ease; }
 a:hover { color: var(--accent); }
 
-/* 🎯 2. 全站內容對齊容器 (用於對齊 About, Projects, Archive, Posts) */
+/* 2. 全站內容對齊容器 (用於對齊 About, Projects, Archive, Posts) */
 .content-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px 20px 80px 20px;
 }
 
-/* 🎯 統一所有分頁的標題大小 (About Me, Archive, Projects 等) */
+/* 統一所有分頁的標題大小 (About Me, Archive, Projects 等) */
 .content-container h1 {
   font-size: 2rem;
   font-weight: 800;
@@ -53,7 +53,7 @@ a:hover { color: var(--accent); }
   align-items: center; 
   letter-spacing: -1.0px;
   span {
-    font-weight: 400; /* 可以讓後面的字稍細 */
+    font-weight: 400; /* 讓後面的字稍細 */
     margin-left: 2px;
   }
 }
@@ -75,21 +75,21 @@ a:hover { color: var(--accent); }
 
 @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
 
-/* 🎯 5. 文章內文優化 (行距與分隔線) */
+/* 5. 文章內文優化 (行距與分隔線) */
 .post-content {
-    line-height: 2.0; /* 🎯 你的要求：加大行距 */
+    line-height: 2.0; /* 加大行距 */
     font-size: 1.1rem;
     color: #333;
 }
 .post-content hr {
     border: none;
-    border-top: 1px solid var(--text-thirdary); /* 🎯 你的要求：淡灰色線 */
+    border-top: 1px solid var(--text-thirdary); /* 淡灰色線 */
     margin: 50px 0;
 }
 .post-content img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
 .post-content h2, .post-content h3 { margin-top: 2em; margin-bottom: 1em; }
 
-/* 🎯 6. TABLE OF CONTENTS (側邊固定導航) */
+/* 6. TABLE OF CONTENTS (側邊固定導航) */
 .post-toc-sidebar {
     position: fixed;
     left: calc(50% + 440px); /* 位於 800px 容器邊緣右側 */
@@ -108,7 +108,7 @@ a:hover { color: var(--accent); }
 /* --- 7. ARCHIVE 標籤篩選器樣式 (移除底線) --- */
 .tag-filter-container {
     padding-bottom: 20px;
-    border-bottom: none; /* 🎯 移除下方的直線 */
+    border-bottom: none;
     margin-bottom: 30px;
 }
 
@@ -116,7 +116,7 @@ a:hover { color: var(--accent); }
     cursor: pointer;
     user-select: none;
     padding: 8px 18px !important;
-    font-size: 0.95rem !important; /* 🎯 較大的字體 */
+    font-size: 0.95rem !important; /* 較大字體 */
     border-radius: 30px !important;
     transition: all 0.3s ease;
     opacity: 0.8; 
@@ -127,7 +127,7 @@ a:hover { color: var(--accent); }
     transform: translateY(-2px);
 }
 
-/* 🎯 8. 標籤顏色定義 (新增學習與雜記) --- */
+/* 8. 標籤顏色定義 (新增學習與雜記) --- */
 .post-category {
     padding: 4px 10px; 
     border-radius: 4px; 
@@ -139,19 +139,22 @@ a:hover { color: var(--accent); }
     display: inline-block;
 }
 
-/* Show All (Overall) 使用深灰色 */
+/* Show All (Overall) */
 .post-category[data-tag="all"] { background-color: #333333; opacity: 1; }
 
-/* 🎯 針對你的標籤自定義顏色 */
-.post-category[data-tag="學習"] { background-color: #3498db; } /* 藍色 */
-.post-category[data-tag="雜記"] { background-color: #95a5a6; } /* 質感灰 */
+/* Tag color */
+.post-category[data-tag="學習"] { background-color: #8ee8cc; }
+.post-category[data-tag="雜記"] { background-color: #ff8dac; }
 
-.post-category[data-tag="Python"] { background-color: #3776AB; }
 .post-category[data-tag="Tech"] { background-color: #2ecc71; }
+
+.post-category[data-tag="R"] { background-color: #75AADB; }
+.post-category[data-tag="Python"] { background-color: #306998; }
+.post-category[data-tag="SAS"] { background-color: #006dcf; }
 .post-category[data-tag="JS"] { background-color: #F7DF1E; }
 .post-category[data-tag="HTML"] { background-color: #E34F26; }
 
-/* 🎯 9. About Me 特殊樣式 & CV Button */
+/* 9. About Me 特殊樣式 & CV Button */
 /* --- About 頁面專屬美化 --- */
 
 .cv-section-enhanced {
