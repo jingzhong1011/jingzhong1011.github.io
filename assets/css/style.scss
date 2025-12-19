@@ -120,6 +120,126 @@ hr, .projects-grid hr {
   transition: 0.3s;
 }
 
+/* 7. About Me 特殊樣式 & CV Button */
+/* --- About 頁面專屬美化 --- */
+
+.cv-section-enhanced {
+  margin-top: 80px;
+  padding: 40px;
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease;
+
+  .cv-content {
+    text-align: left;
+    h3 { margin: 0 0 8px 0; font-size: 1.25rem; }
+    p { margin: 0; color: var(--text-secondary); font-size: 0.95rem; }
+  }
+}
+
+/* --- Research Interests 標籤化樣式 --- */
+.interests-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.interest-tag {
+  background-color: #fdfdfd;      /* 比背景稍微白一點點 */
+  color: var(--text-primary);
+  padding: 8px 18px;
+  border-radius: 50px;           /* 膠囊造型 */
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid #e0e0e0;     /* 淡灰色細邊框 */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: default;
+
+  &:hover {
+    background-color: var(--bg-color);
+    border-color: var(--accent); /* 懸停時邊框變紅 */
+    color: var(--accent);        /* 懸停時文字變紅 */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* CV 區域美化 */
+.cv-section-enhanced {
+  padding: 35px;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cv-button-pretty {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: var(--text-primary);
+  color: #fff !important;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+  
+  &:hover {
+    background-color: var(--accent);
+    transform: scale(1.03);
+  }
+}
+
+/* CV 按鈕 */
+.cv-button-pretty {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background-color: var(--text-primary);
+  color: #ffffff !important;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(252, 77, 80, 0.2);
+    
+    svg { transform: translateX(3px); }
+  }
+
+  svg {
+    transition: transform 0.3s ease;
+  }
+}
+
+/* --- 漢堡按鈕基本樣式 --- */
+.menu-button {
+  display: none; /* 電腦版隱藏 */
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 1001;
+}
+
+.icon-bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-primary);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+
 @media (max-width: 768px) {
   .site-header-inner { position: relative; }
   .menu-button { display: flex; }
