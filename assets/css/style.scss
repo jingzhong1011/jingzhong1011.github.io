@@ -106,34 +106,35 @@ hr, .projects-grid hr {
 /* 8. 標籤顏色定義 */
 .post-category {
     padding: 3px 12px;
-    border-radius: 20px; /* 膠囊造型 */
+    border-radius: 20px;
     font-size: 0.75rem;
     font-weight: 600;
     display: inline-block;
+    color: #fff; 
+    background-color: #bdc3c7; /* 預設灰色 */
 }
 
-/* 類別類：有底色、白字 (使用 .tag-type) */
-.tag-type {
+/* 類別類 (tag-type)：底色白字 */
+/* 注意：.post-category.tag-type 中間沒有空格，代表「同時具備這兩個 class」 */
+.post-category.tag-type {
     color: #ffffff !important;
 }
-.tag-type[data-tag="all"]  { background-color: #333333; }
-.tag-type[data-tag="學習"] { background-color: #8ee8cc; }
-.tag-type[data-tag="雜記"] { background-color: #ff8dac; }
-.tag-type[data-tag="Publication"] { background-color: #15803d; } /* 深綠 */
-.tag-type[data-tag="Research"]    { background-color: #0369a1; } /* 深藍 */
-.tag-type[data-tag="DataViz"]   { background-color: #a16207; } /* 深黃/棕 */
-.tag-type[data-tag="ML"] { background-color: #86198f; } /* 紫色 */
 
-/* 技術類：透明底、有色字 + 邊框 (使用 .tag-tech) */
-.tag-tech {
+.post-category.tag-type[data-tag="Publication"] { background-color: #15803d !important; }
+.post-category.tag-type[data-tag="Research"]    { background-color: #0369a1 !important; }
+.post-category.tag-type[data-tag="DataViz"]     { background-color: #a16207 !important; }
+.post-category.tag-type[data-tag="ML"]          { background-color: #86198f !important; }
+
+/* 技術類 (tag-tech)：透明底、色字、邊框 */
+.post-category.tag-tech {
     background-color: transparent !important;
-    border: 1px solid currentColor; /* 自動抓取文字顏色作為邊框 */
+    border: 1px solid currentColor;
 }
-.tag-tech[data-tag="R"]      { color: #276BBE; } 
-.tag-tech[data-tag="Python"] { color: #3776AB; }
-.tag-tech[data-tag="SAS"]    { color: #007CC3; }
-.tag-tech[data-tag="JS"]     { color: #D5B600; } /* 稍微加深黃色以利閱讀 */
-.tag-tech[data-tag="HTML"]   { color: #E34F26; }
+.post-category.tag-tech[data-tag="R"]      { color: #276BBE !important; } 
+.post-category.tag-tech[data-tag="Python"] { color: #3776AB !important; }
+.post-category.tag-tech[data-tag="SAS"]    { color: #007CC3 !important; }
+.post-category.tag-tech[data-tag="JS"]     { color: #D5B600 !important; }
+.post-category.tag-tech[data-tag="HTML"]   { color: #E34F26 !important; }
 
 
 
