@@ -66,7 +66,7 @@ hr, .projects-grid hr {
 /* 5. HERO SECTION */
 .hero-section {
   min-height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
-  background-image: url('../img/hero-bg.png'); background-size: cover; background-position: center;
+  background-image: url('../img/hero-bg.jpg'); background-size: cover; background-position: center;
   position: relative; text-transform: uppercase; overflow: hidden;
 }
 .hero-section::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.1); z-index: 1; }
@@ -105,25 +105,37 @@ hr, .projects-grid hr {
 
 /* 8. 標籤顏色定義 */
 .post-category {
-    padding: 4px 10px; 
-    border-radius: 4px; 
-    font-size: 0.8rem; 
-    font-weight: 700; 
-    color: #fff; 
-    background-color: #bdc3c7; 
+    padding: 3px 12px;
+    border-radius: 20px; /* 膠囊造型 */
+    font-size: 0.75rem;
+    font-weight: 600;
     display: inline-block;
 }
-.post-category[data-tag="all"] { background-color: #333333; }
-.post-category[data-tag="學習"] { background-color: #8ee8cc; }
-.post-category[data-tag="雜記"] { background-color: #ff8dac; }
-.post-category[data-tag="Tech"] { background-color: #2ecc71; }
-.post-category[data-tag="ML"] { background-color: #2ecc71; }
-.post-category[data-tag="R"] { background-color: #75AADB; }
-.post-category[data-tag="Python"] { background-color: #306998; }
-.post-category[data-tag="SAS"] { background-color: #006dcf; }
-.post-category[data-tag="JS"] { background-color: #F7DF1E; color: #333; }
-.post-category[data-tag="HTML"] { background-color: #E34F26; }
-.post-category[data-tag="HTML/CSS"] { background-color: #E34F26; }
+
+/* 類別類：有底色、白字 (使用 .tag-type) */
+.tag-type {
+    color: #ffffff !important;
+}
+.tag-type[data-tag="all"]  { background-color: #333333; }
+.tag-type[data-tag="學習"] { background-color: #8ee8cc; }
+.tag-type[data-tag="雜記"] { background-color: #ff8dac; }
+.tag-type[data-tag="Publication"] { background-color: #15803d; } /* 深綠 */
+.tag-type[data-tag="Research"]    { background-color: #0369a1; } /* 深藍 */
+.tag-type[data-tag="DataViz"]   { background-color: #a16207; } /* 深黃/棕 */
+.tag-type[data-tag="ML"] { background-color: #86198f; } /* 紫色 */
+
+/* 技術類：透明底、有色字 + 邊框 (使用 .tag-tech) */
+.tag-tech {
+    background-color: transparent !important;
+    border: 1px solid currentColor; /* 自動抓取文字顏色作為邊框 */
+}
+.tag-tech[data-tag="R"]      { color: #276BBE; } 
+.tag-tech[data-tag="Python"] { color: #3776AB; }
+.tag-tech[data-tag="SAS"]    { color: #007CC3; }
+.tag-tech[data-tag="JS"]     { color: #D5B600; } /* 稍微加深黃色以利閱讀 */
+.tag-tech[data-tag="HTML"]   { color: #E34F26; }
+
+
 
 /* 9. About Me 特殊樣式 & CV Button */
 .cv-section-enhanced {

@@ -7,13 +7,13 @@ title: Archive
   <h1>Archive</h1>
 
   <div class="tag-filter-container" style="margin-bottom: 40px; display: flex; flex-wrap: wrap; gap: 12px;">
-    <span class="post-category tag-filter-item active" data-tag="all" style="cursor: pointer; background-color: #333;">
+    <span class="post-category tag-type tag-filter-item active" data-tag="all" style="cursor: pointer;">
       Show All
     </span>
 
     {% assign all_tags = site.tags | sort %}
     {% for tag in all_tags %}
-      <span class="post-category tag-filter-item" data-tag="{{ tag[0] }}" style="cursor: pointer;">
+      <span class="post-category tag-type tag-filter-item" data-tag="{{ tag[0] }}" style="cursor: pointer;">
         {{ tag[0] }}
       </span>
     {% endfor %}
@@ -23,13 +23,15 @@ title: Archive
     {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
     {% for year in posts_by_year %}
       <div class="archive-year-group" data-year="{{ year.name }}">
-        <h2 class="archive-year-title" style="margin-top: 40px; font-size: 1.5rem; color: var(--text-secondary);">{{ year.name }}</h2>
+        <h2 class="archive-year-title" style="margin-top: 40px; font-size: 1.5rem; color: var(--text-secondary); border-bottom: 1px solid var(--text-thirdary); padding-bottom: 10px;">
+          {{ year.name }}
+        </h2>
         
         {% for post in year.items %}
-          <div class="post-item-minimal-archive" data-tags="{{ post.tags | join: ',' }}" style="display: flex; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--text-thirdary);">
+          <div class="post-item-minimal-archive" data-tags="{{ post.tags | join: ',' }}" style="display: flex; align-items: center; padding: 15px 0; border-bottom: 1px solid var(--text-thirdary);">
             <span class="archive-date-col" style="width: 80px; color: var(--text-secondary); font-size: 0.9rem; flex-shrink: 0;">{{ post.date | date: "%b %d" }}</span>
             <a href="{{ post.url | relative_url }}" style="flex-grow: 1;">
-              <h3 style="font-size: 1.15rem; font-weight: 500; margin: 0;">{{ post.title }}</h3>
+              <h3 style="font-size: 1.1rem; font-weight: 500; margin: 0;">{{ post.title }}</h3>
             </a>
           </div>
         {% endfor %}
@@ -43,11 +45,13 @@ document.querySelectorAll('.tag-filter-item').forEach(button => {
   button.addEventListener('click', function() {
     const selectedTag = this.getAttribute('data-tag');
 
-    // 1. 處理按鈕 Active 狀態 (視覺回饋)
+    // 1. 處理按鈕 Active 狀態：切換 class 並調整透明度
     document.querySelectorAll('.tag-filter-item').forEach(btn => {
-      btn.style.opacity = "0.5"; // 未選中的變淡
+      btn.classList.remove('active');
+      btn.style.opacity = "0.4"; // 未選中的標籤變淡
     });
-    this.style.opacity = "1"; // 選中的變亮
+    this.classList.add('active');
+    this.style.opacity = "1"; // 選中的標籤完全顯示
 
     // 2. 篩選文章
     document.querySelectorAll('.post-item-minimal-archive').forEach(post => {
@@ -62,8 +66,11 @@ document.querySelectorAll('.tag-filter-item').forEach(button => {
 
     // 3. 檢查年份標題：如果該年份下沒有顯示的文章，隱藏整個年份區塊
     document.querySelectorAll('.archive-year-group').forEach(group => {
-      const visiblePosts = group.querySelectorAll('.post-item-minimal-archive[style*="display: flex"]');
-      if (visiblePosts.length === 0 && selectedTag !== 'all') {
+      // 檢查該群組內是否有任何文章的 display 不是 none
+      const visiblePosts = Array.from(group.querySelectorAll('.post-item-minimal-archive'))
+                                .filter(p => p.style.display !== 'none');
+      
+      if (visiblePosts.length === 0) {
         group.style.display = 'none';
       } else {
         group.style.display = 'block';
