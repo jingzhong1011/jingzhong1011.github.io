@@ -66,7 +66,7 @@ hr, .projects-grid hr {
 /* 5. HERO SECTION */
 .hero-section {
   min-height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
-  background-image: url('../img/hero-bg.jpg'); background-size: cover; background-position: center;
+  background-image: url('../img/hero-bg.jpeg'); background-size: cover; background-position: center;
   position: relative; text-transform: uppercase; overflow: hidden;
 }
 .hero-section::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.1); z-index: 1; }
@@ -110,33 +110,34 @@ hr, .projects-grid hr {
     font-size: 0.75rem;
     font-weight: 600;
     display: inline-block;
-    color: #fff; 
-    background-color: #bdc3c7; /* 預設灰色 */
+    transition: all 0.2s ease;
+
+    // 類別類 (tag-type)：底色白字
+    &.tag-type {
+        color: #ffffff !important;
+        
+        &[data-tag="all"]         { background-color: #333333 !important; }
+        &[data-tag="學習"]        { background-color: #8ee8cc !important; }
+        &[data-tag="雜記"]        { background-color: #ff8dac !important; }
+        &[data-tag="Publication"] { background-color: #15803d !important; }
+        &[data-tag="Research"]    { background-color: #0369a1 !important; }
+        &[data-tag="Data Viz"]     { background-color: #a16207 !important; }
+        &[data-tag="ML"]          { background-color: #86198f !important; }
+    }
+
+    // 技術類 (tag-tech)：透明底、色字、邊框
+    &.tag-tech {
+        background-color: transparent !important;
+        border: 1px solid currentColor !important;
+        
+        &[data-tag="R"]      { color: #276BBE !important; } 
+        &[data-tag="Python"] { color: #3776AB !important; }
+        &[data-tag="SAS"]    { color: #007CC3 !important; }
+        &[data-tag="JS"]     { color: #D5B600 !important; }
+        &[data-tag="HTML"]   { color: #E34F26 !important; }
+        &[data-tag="HTML/CSS"] { color: #E34F26 !important; }
+    }
 }
-
-/* 類別類 (tag-type)：底色白字 */
-/* 注意：.post-category.tag-type 中間沒有空格，代表「同時具備這兩個 class」 */
-.post-category.tag-type {
-    color: #ffffff !important;
-}
-
-.post-category.tag-type[data-tag="Publication"] { background-color: #15803d !important; }
-.post-category.tag-type[data-tag="Research"]    { background-color: #0369a1 !important; }
-.post-category.tag-type[data-tag="DataViz"]     { background-color: #a16207 !important; }
-.post-category.tag-type[data-tag="ML"]          { background-color: #86198f !important; }
-
-/* 技術類 (tag-tech)：透明底、色字、邊框 */
-.post-category.tag-tech {
-    background-color: transparent !important;
-    border: 1px solid currentColor;
-}
-.post-category.tag-tech[data-tag="R"]      { color: #276BBE !important; } 
-.post-category.tag-tech[data-tag="Python"] { color: #3776AB !important; }
-.post-category.tag-tech[data-tag="SAS"]    { color: #007CC3 !important; }
-.post-category.tag-tech[data-tag="JS"]     { color: #D5B600 !important; }
-.post-category.tag-tech[data-tag="HTML"]   { color: #E34F26 !important; }
-
-
 
 /* 9. About Me 特殊樣式 & CV Button */
 .cv-section-enhanced {
