@@ -1,8 +1,8 @@
 ---
 ---
-/* -----------------------------------------------------------
-  Zhong's Blog - Full Integrated Style Sheet (2025 Edition)
------------------------------------------------------------ */
+/* -------------
+  Zhong's Blog 
+--------------*/
 
 :root {
   --bg-color: #ffffff; 
@@ -42,15 +42,14 @@ a:hover { color: var(--accent); }
   letter-spacing: -0.5px;
 }
 
-/* 🎯 Projects 質感灰分隔線修正 */
-/* 這裡同時針對 hr 以及 index.html 裡的 hr 進行強制覆蓋 */
+/* 3. 質感灰分隔線 (Projects & Posts) */
 hr, .projects-grid hr {
   border: none !important;
   border-top: 1px solid var(--text-thirdary) !important;
   margin: 30px 0;
 }
 
-/* 3. HEADER 樣式 */
+/* 4. HEADER 樣式 */
 .site-header { background-color: var(--card-bg); width: 100%; }
 .site-header-inner { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; }
 .site-title { 
@@ -64,7 +63,7 @@ hr, .projects-grid hr {
 .site-icon { width: 28px !important; height: 28px !important; margin-right: 12px; display: block; }
 .site-nav { display: flex; gap: 25px; font-weight: 500; }
 
-/* 4. HERO SECTION */
+/* 5. HERO SECTION */
 .hero-section {
   min-height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
   background-image: url('../img/hero-bg.png'); background-size: cover; background-position: center;
@@ -79,7 +78,32 @@ hr, .projects-grid hr {
 
 @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
 
-/* 5. 標籤顏色對應確認 (已加入 HTML/CSS 對應) */
+/* 6. 文章內文優化 (加強閱讀性) */
+.post-content {
+    line-height: 2.0; /* 加大行距 */
+    font-size: 1.1rem;
+    color: #333;
+}
+.post-content img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
+.post-content h2, .post-content h3 { margin-top: 2.5em; margin-bottom: 1.2em; }
+
+/* 7. 🎯 TABLE OF CONTENTS (側邊固定導航) - 修正跑位 */
+.post-toc-sidebar {
+    position: fixed;
+    left: calc(50% + 440px); /* 位於 800px 容器邊緣右側 */
+    top: 140px;
+    width: 220px;
+    z-index: 10;
+    border-left: 1px solid var(--text-thirdary);
+    padding-left: 20px;
+}
+.toc-title { font-weight: 800; font-size: 0.75rem; color: var(--accent); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 12px; }
+#toc-content-js ul { list-style: none; padding: 0; margin: 0; }
+#toc-content-js li { margin-bottom: 10px; line-height: 1.4; }
+#toc-content-js a { color: var(--text-secondary); font-size: 0.85rem; transition: 0.2s; }
+#toc-content-js a:hover { color: var(--accent); }
+
+/* 8. 標籤顏色定義 */
 .post-category {
     padding: 4px 10px; 
     border-radius: 4px; 
@@ -89,180 +113,44 @@ hr, .projects-grid hr {
     background-color: #bdc3c7; 
     display: inline-block;
 }
-
 .post-category[data-tag="all"] { background-color: #333333; }
 .post-category[data-tag="學習"] { background-color: #8ee8cc; }
 .post-category[data-tag="雜記"] { background-color: #ff8dac; }
 .post-category[data-tag="Tech"] { background-color: #2ecc71; }
-.post-category[data-tag="ML"] { background-color: #2ecc71; } /* 讓 ML 跟 Tech 顏色一致 */
+.post-category[data-tag="ML"] { background-color: #2ecc71; }
 .post-category[data-tag="R"] { background-color: #75AADB; }
 .post-category[data-tag="Python"] { background-color: #306998; }
 .post-category[data-tag="SAS"] { background-color: #006dcf; }
-.post-category[data-tag="JS"] { background-color: #F7DF1E; color: #333; } /* 黃底配深字比較清楚 */
+.post-category[data-tag="JS"] { background-color: #F7DF1E; color: #333; }
 .post-category[data-tag="HTML"] { background-color: #E34F26; }
-.post-category[data-tag="HTML/CSS"] { background-color: #E34F26; } /* 確保 index.html 的標籤能對應 */
+.post-category[data-tag="HTML/CSS"] { background-color: #E34F26; }
 
-/* 6. 漢堡按鈕與 RWD  */
-.menu-button {
-  display: none; 
-  cursor: pointer;
-  flex-direction: column;
-  gap: 5px;
-  z-index: 1001;
-}
-
-.icon-bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: var(--text-primary);
-  border-radius: 2px;
-  transition: 0.3s;
-}
-
-/* 7. About Me 特殊樣式 & CV Button */
-/* --- About 頁面專屬美化 --- */
-
+/* 9. About Me 特殊樣式 & CV Button */
 .cv-section-enhanced {
-  margin-top: 80px;
-  padding: 40px;
-  background-color: var(--card-bg);
-  border-radius: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: transform 0.3s ease;
-
-  .cv-content {
-    text-align: left;
-    h3 { margin: 0 0 8px 0; font-size: 1.25rem; }
-    p { margin: 0; color: var(--text-secondary); font-size: 0.95rem; }
-  }
+  margin-top: 80px; padding: 40px; background-color: var(--card-bg); border-radius: 16px;
+  display: flex; justify-content: space-between; align-items: center; transition: transform 0.3s ease;
 }
-
-/* --- Research Interests 標籤化樣式 --- */
-.interests-tags-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.interest-tag {
-  background-color: #fdfdfd;      /* 比背景稍微白一點點 */
-  color: var(--text-primary);
-  padding: 8px 18px;
-  border-radius: 50px;           /* 膠囊造型 */
-  font-size: 0.9rem;
-  font-weight: 500;
-  border: 1px solid #e0e0e0;     /* 淡灰色細邊框 */
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  cursor: default;
-
-  &:hover {
-    background-color: var(--bg-color);
-    border-color: var(--accent); /* 懸停時邊框變紅 */
-    color: var(--accent);        /* 懸停時文字變紅 */
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  }
-}
-
-/* CV 區域美化 */
-.cv-section-enhanced {
-  padding: 35px;
-  background-color: var(--card-bg);
-  border-radius: 12px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
+.cv-content { text-align: left; h3 { margin: 0 0 8px 0; } p { color: var(--text-secondary); } }
 .cv-button-pretty {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 24px;
-  background-color: var(--text-primary);
-  color: #fff !important;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: 0.3s;
-  
-  &:hover {
-    background-color: var(--accent);
-    transform: scale(1.03);
-  }
+  display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px;
+  background-color: var(--text-primary); color: #ffffff !important; border-radius: 12px;
+  font-weight: 600; transition: 0.3s; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  &:hover { background-color: var(--accent); transform: translateY(-3px); }
 }
 
-/* CV 按鈕 */
-.cv-button-pretty {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 28px;
-  background-color: var(--text-primary);
-  color: #ffffff !important;
-  border-radius: 12px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+/* 10. 漢堡按鈕與手機版 RWD */
+.menu-button { display: none; cursor: pointer; flex-direction: column; gap: 5px; z-index: 1001; }
+.icon-bar { display: block; width: 25px; height: 3px; background-color: var(--text-primary); border-radius: 2px; transition: 0.3s; }
 
-  &:hover {
-    background-color: var(--accent);
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(252, 77, 80, 0.2);
-    
-    svg { transform: translateX(3px); }
-  }
-
-  svg {
-    transition: transform 0.3s ease;
-  }
-}
-
-/* --- 漢堡按鈕基本樣式 --- */
-.menu-button {
-  display: none; /* 電腦版隱藏 */
-  cursor: pointer;
-  flex-direction: column;
-  gap: 5px;
-  z-index: 1001;
-}
-
-.icon-bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: var(--text-primary);
-  border-radius: 2px;
-  transition: 0.3s;
-}
-
+@media (max-width: 1200px) { .post-toc-sidebar { display: none; } } /* 大平板以下隱藏 TOC */
 
 @media (max-width: 768px) {
   .site-header-inner { position: relative; }
   .menu-button { display: flex; }
   .site-nav {
-    display: none; 
-    flex-direction: column;
-    position: absolute;
-    top: 100%; 
-    left: 0;
-    width: 100%;
-    background-color: var(--card-bg);
-    padding: 10px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    z-index: 1000;
+    display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%;
+    background-color: var(--card-bg); padding: 10px 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1); z-index: 1000;
   }
-  .nav-item {
-    padding: 15px 40px;
-    border-bottom: 1px solid var(--text-thirdary);
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .site-nav.active {
-    display: flex !important; 
-  }
+  .nav-item { padding: 15px 40px; border-bottom: 1px solid var(--text-thirdary); width: 100%; box-sizing: border-box; }
+  .site-nav.active { display: flex !important; }
 }
-/* 這裡已經刪除了多餘的 } 號 */
