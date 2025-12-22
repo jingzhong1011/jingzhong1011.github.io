@@ -117,12 +117,14 @@ hr, .projects-grid hr {
         color: #ffffff !important;
         
         &[data-tag="all"]         { background-color: #333333 !important; }
-        &[data-tag="學習"]        { background-color: #8ee8cc !important; }
-        &[data-tag="雜記"]        { background-color: #ff8dac !important; }
-        &[data-tag="Publication"] { background-color: #15803d !important; }
-        &[data-tag="Research"]    { background-color: #0369a1 !important; }
-        &[data-tag="Data Viz"]     { background-color: #a16207 !important; }
-        &[data-tag="ML"]          { background-color: #86198f !important; }
+        &[data-tag="Academic"]        { background-color: #8ee8cc !important; }
+        &[data-tag="Tech"]        { background-color: #9065c2 !important; }
+        &[data-tag="Life"]        { background-color: #ff8dac !important; }
+        &[data-tag="Analysis"]    { background-color: #074aab !important; }
+        &[data-tag="Project"] { background-color: #fac066 !important; }
+        &[data-tag="Bayesian"] { background-color: #95dfed !important; }
+        &[data-tag="Data Viz"]     { background-color: #cf2e45 !important; }
+        &[data-tag="ML"]          { background-color: #bed48a !important; }
     }
 
     // 技術類 (tag-tech)：透明底、色字、邊框
@@ -135,7 +137,6 @@ hr, .projects-grid hr {
         &[data-tag="SAS"]    { color: #007CC3 !important; }
         &[data-tag="JS"]     { color: #D5B600 !important; }
         &[data-tag="HTML"]   { color: #E34F26 !important; }
-        &[data-tag="HTML/CSS"] { color: #E34F26 !important; }
     }
 }
 
