@@ -117,13 +117,13 @@ hr, .projects-grid hr {
         color: #ffffff !important;
         
         &[data-tag="all"]         { background-color: #333333 !important; }
-        &[data-tag="Academic"]        { background-color: #8ee8cc !important; }
+        &[data-tag="Academic"]    { background-color: #8ee8cc !important; }
         &[data-tag="Tech"]        { background-color: #9065c2 !important; }
         &[data-tag="Life"]        { background-color: #ff8dac !important; }
         &[data-tag="Analysis"]    { background-color: #074aab !important; }
-        &[data-tag="Project"] { background-color: #fac066 !important; }
-        &[data-tag="Bayesian"] { background-color: #95dfed !important; }
-        &[data-tag="Data Viz"]     { background-color: #cf2e45 !important; }
+        &[data-tag="Project"]     { background-color: #fac066 !important; }
+        &[data-tag="Bayesian"]    { background-color: #95dfed !important; }
+        &[data-tag="Data Viz"]    { background-color: #cf2e45 !important; }
         &[data-tag="ML"]          { background-color: #bed48a !important; }
     }
 

@@ -1,6 +1,6 @@
 ---
 title: "畢業致謝"
-tags: 雜記
+tags: [Academic, Life]
 modify_date: 2024-12-14
 ---
 

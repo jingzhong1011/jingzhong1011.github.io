@@ -1,6 +1,6 @@
 ---
 title: "以機器學習進行糖尿病預測之分析架構"
-tags: 學習
+tags: [Academic, Tech]
 modify_date: 2025-06-01
 ---
 
