@@ -27,6 +27,24 @@ body {
 a { color: var(--text-primary); text-decoration: none; transition: 0.3s ease; }
 a:hover { color: var(--accent); }
 
+/* --- 閱讀進度條 --- */
+.progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px; /* 進度條高度 */
+  background: transparent;
+  z-index: 9999; /* 確保在最上層 */
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--accent);
+  width: 0%;
+  transition: width 0.1s ease;
+}
+
 /* 2. 全站內容對齊容器 */
 .content-container {
   max-width: 800px;
