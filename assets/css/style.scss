@@ -27,7 +27,7 @@ body {
 a { color: var(--text-primary); text-decoration: none; transition: 0.3s ease; }
 a:hover { color: var(--accent); }
 
-/* --- 閱讀進度條 --- */
+/* 閱讀進度條 */
 .progress-container {
   position: fixed;
   top: 0;
@@ -45,6 +45,41 @@ a:hover { color: var(--accent); }
   transition: width 0.1s ease;
 }
 
+/* Bio */
+.bio-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.bio-text {
+  flex: 7; 
+}
+
+.bio-photo {
+  flex: 3; 
+  text-align: center;
+}
+
+.bio-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 1px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .bio-container {
+    flex-direction: column-reverse; 
+  }
+  .bio-photo {
+    width: 60%; 
+    margin: 0 auto 20px;
+  }
+}
+
 /* 2. 全站內容對齊容器 */
 .content-container {
   max-width: 800px;
@@ -60,7 +95,7 @@ a:hover { color: var(--accent); }
   letter-spacing: -0.5px;
 }
 
-/* 3. 質感灰分隔線 (Projects & Posts) */
+/* 3. 分隔線 (Projects & Posts) */
 hr, .projects-grid hr {
   border: none !important;
   border-top: 1px solid var(--text-thirdary) !important;
@@ -96,19 +131,19 @@ hr, .projects-grid hr {
 
 @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
 
-/* 6. 文章內文優化 (加強閱讀性) */
+/* 6. 文章內文 */
 .post-content {
-    line-height: 2.0; /* 加大行距 */
+    line-height: 2.0; 
     font-size: 1.1rem;
     color: #333;
 }
 .post-content img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; }
 .post-content h2, .post-content h3 { margin-top: 2.5em; margin-bottom: 1.2em; }
 
-/* 7. 🎯 TABLE OF CONTENTS (側邊固定導航) - 修正跑位 */
+/* 7. TABLE OF CONTENTS (側邊固定導航)*/
 .post-toc-sidebar {
     position: fixed;
-    left: calc(50% + 440px); /* 位於 800px 容器邊緣右側 */
+    left: calc(50% + 440px);
     top: 140px;
     width: 220px;
     z-index: 10;
