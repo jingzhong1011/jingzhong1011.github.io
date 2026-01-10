@@ -48,10 +48,10 @@ a:hover { color: var(--accent); }
 /* Bio */
 .bio-container {
   display: flex;
-  align-items: flex-start;
-  gap: 40px;
-  max-width: 1000px;
-  margin: 0 auto;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  gap: 40px; 
+  margin-top: 20px;
 }
 
 .bio-text {
@@ -60,23 +60,27 @@ a:hover { color: var(--accent); }
 
 .bio-photo {
   flex: 3; 
-  text-align: center;
+  display: flex;
+  justify-content: flex-end; 
 }
 
 .bio-photo img {
-  width: 100%;
-  height: auto;
-  border-radius: 1px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 30%;                   
+  height: auto; 
+  border: 1px solid #ddd;
+  padding: 4px;
+  background: white;
 }
 
 @media (max-width: 768px) {
   .bio-container {
-    flex-direction: column-reverse; 
+    flex-direction: column;
   }
   .bio-photo {
-    width: 60%; 
-    margin: 0 auto 20px;
+    justify-content: flex-start;
+  }
+  .bio-photo img {
+    width: 120px; 
   }
 }
 
