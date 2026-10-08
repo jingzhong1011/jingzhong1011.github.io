@@ -1,5 +1,6 @@
 # Software and code — rendered on /research/.
 # group: software | earlier
+# demo:  optional link to a live demo, shown next to the GitHub link
 
 - name: letools
   url: https://github.com/jingzhong1011/letools
