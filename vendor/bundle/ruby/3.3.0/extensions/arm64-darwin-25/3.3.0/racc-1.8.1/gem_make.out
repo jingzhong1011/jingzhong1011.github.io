@@ -1,0 +1,18 @@
+current directory: /Users/jing-zhongwang/Documents/GitHub/jingzhong1011.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/jing-zhongwang/.rbenv/versions/3.3.3/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/jing-zhongwang/Documents/GitHub/jingzhong1011.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260805-66399-u8v3kp sitelibdir\=./.gem.20260805-66399-u8v3kp clean
+
+current directory: /Users/jing-zhongwang/Documents/GitHub/jingzhong1011.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260805-66399-u8v3kp sitelibdir\=./.gem.20260805-66399-u8v3kp
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/jing-zhongwang/Documents/GitHub/jingzhong1011.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260805-66399-u8v3kp sitelibdir\=./.gem.20260805-66399-u8v3kp install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20260805-66399-u8v3kp/racc
+
+current directory: /Users/jing-zhongwang/Documents/GitHub/jingzhong1011.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260805-66399-u8v3kp sitelibdir\=./.gem.20260805-66399-u8v3kp clean

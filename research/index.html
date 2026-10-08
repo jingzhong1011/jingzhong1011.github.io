@@ -1,0 +1,53 @@
+---
+layout: default
+title: Research
+permalink: /research/
+description: Publications, manuscripts, and research software by Jing-Zhong Wang.
+---
+
+<div class="container">
+  <header class="page-header">
+    <h1 class="page-title">Research</h1>
+    <p class="page-intro">Publications, manuscripts, and the code behind them.</p>
+  </header>
+
+  <section class="section">
+    <h2 class="section-title">Publications</h2>
+    <div class="section-body">
+      {%- assign groups = "published|Published,review|Under review,preparation|In preparation" | split: "," %}
+      {%- for group in groups %}
+        {%- assign g = group | split: "|" %}
+        {%- assign pubs = site.data.publications | where: "status", g[0] %}
+        {%- if pubs.size > 0 %}
+        <h3 class="group-label"><span class="pub-status pub-status--{{ g[0] }}">{{ g[1] }}</span></h3>
+        {%- for pub in pubs %}
+        {% include publication.html pub=pub %}
+        {%- endfor %}
+        {%- endif %}
+      {%- endfor %}
+    </div>
+  </section>
+
+  {%- assign groups = "software|Software,earlier|Earlier work" | split: "," %}
+  {%- for group in groups %}
+  {%- assign g = group | split: "|" %}
+  {%- assign items = site.data.software | where: "group", g[0] %}
+  {%- if items.size > 0 %}
+  <section class="section">
+    <h2 class="section-title">{{ g[1] }}</h2>
+    <div class="section-body">
+      {%- for item in items %}
+      <article class="pub">
+        <h3 class="pub-title"><a href="{{ item.url }}">{{ item.name }}</a></h3>
+        <p class="pub-summary">{{ item.description }}</p>
+        <div class="pub-meta">
+          <a class="pub-link" href="{{ item.url }}">GitHub</a>
+          {%- if item.tools %}<span class="tools">{{ item.tools | join: " · " }}</span>{% endif %}
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+  {%- endfor %}
+</div>

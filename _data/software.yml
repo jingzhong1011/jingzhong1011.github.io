@@ -1,0 +1,9 @@
+# Software and code — rendered on /research/.
+# group: software | earlier
+
+- name: letools
+  url: https://github.com/jingzhong1011/letools
+  description: R package for abridged life tables and exact decomposition of life expectancy differences, built for population health metrics.
+  tools: [R]
+  group: software
+

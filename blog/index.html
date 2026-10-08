@@ -1,0 +1,38 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+description: Notes on my research, travel, and life.
+---
+
+<div class="container">
+  <header class="page-header">
+    <h1 class="page-title">Blog</h1>
+    <p class="page-intro">Notes on research, travel, and life — mostly written in Traditional Chinese.</p>
+  </header>
+
+  <div class="filter" role="group" aria-label="Filter by tag">
+    <button type="button" class="chip is-active" data-tag="all" aria-pressed="true">All</button>
+    {%- assign all_tags = site.tags | sort %}
+    {%- for tag in all_tags %}
+    <button type="button" class="chip" data-tag="{{ tag[0] }}" aria-pressed="false">{{ tag[0] }}</button>
+    {%- endfor %}
+  </div>
+
+  {%- assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+  {%- for year in posts_by_year %}
+  <section class="section year-group">
+    <h2 class="section-title">{{ year.name }}</h2>
+    <ul class="post-list section-body">
+      {%- for post in year.items %}
+      <li class="post-row" data-tags="{{ post.tags | join: ',' }}">
+        <a href="{{ post.url | relative_url }}">
+          <span class="post-row-title">{{ post.title }}</span>
+          <time class="post-row-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d" }}</time>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endfor %}
+</div>

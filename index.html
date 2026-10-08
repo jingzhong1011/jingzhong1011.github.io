@@ -1,0 +1,76 @@
+---
+layout: default
+title: About
+---
+{%- assign p = site.data.profile -%}
+
+<section class="profile container">
+  <div class="profile-text">
+    <h1 class="profile-name">{{ p.name }}</h1>
+    <p class="profile-headline">{{ p.headline }}</p>
+    {%- if p.affiliation and p.affiliation != "" %}
+    <p class="profile-affiliation">{{ p.affiliation }}</p>
+    {%- endif %}
+    {%- if p.status and p.status != "" %}
+    <p class="profile-status">{{ p.status }}</p>
+    {%- endif %}
+    {% include profile-links.html %}
+  </div>
+  <img class="profile-photo" src="{{ p.photo | relative_url }}" alt="{{ p.name }}" width="180" height="180">
+</section>
+
+<div class="container">
+  <section class="section">
+    <h2 class="section-title">About</h2>
+    <div class="section-body prose">
+      <p class="lead">
+        I am a health data scientist interested in how population health changes across age, place and time, and how quantitative evidence can inform health.
+      </p>
+      <p>
+        I hold a Master’s degree in Biostatistics and Health Data Science from National Taiwan University, with training in epidemiology, Bayesian modeling, and population health analysis.
+      </p>
+      <p>
+        My work focuses on mortality and life expectancy analysis, small-area and spatiotemporal modeling, and the use of uncertainty-aware methods to support policy-relevant insights.
+      </p>
+      {%- if p.interests %}
+      <ul class="chip-list" aria-label="Research interests">
+        {%- for interest in p.interests %}
+        <li class="chip">{{ interest }}</li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+    </div>
+  </section>
+
+
+  {%- assign selected = site.data.publications | where: "selected", true %}
+  {%- if selected.size > 0 %}
+  <section class="section">
+    <h2 class="section-title">Selected Research</h2>
+    <div class="section-body">
+      {%- for pub in selected %}
+      {% include publication.html pub=pub summary=false status=true %}
+      {%- endfor %}
+      <a class="more-link" href="{{ "/research/" | relative_url }}">All research and code</a>
+    </div>
+  </section>
+  {%- endif %}
+</div>
+
+{%- assign same_as = "" | split: "" -%}
+{%- if p.github and p.github != "" %}{% capture u %}https://github.com/{{ p.github }}{% endcapture %}{% assign same_as = same_as | push: u %}{% endif -%}
+{%- if p.scholar and p.scholar != "" %}{% assign same_as = same_as | push: p.scholar %}{% endif -%}
+{%- if p.orcid and p.orcid != "" %}{% capture u %}https://orcid.org/{{ p.orcid }}{% endcapture %}{% assign same_as = same_as | push: u %}{% endif -%}
+{%- if p.linkedin and p.linkedin != "" %}{% assign same_as = same_as | push: p.linkedin %}{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ p.name | jsonify }},
+  "jobTitle": {{ p.headline | jsonify }},
+  "url": {{ site.url | jsonify }},
+  "image": {{ p.photo | absolute_url | jsonify }},
+  "alumniOf": "National Taiwan University",
+  "sameAs": {{ same_as | jsonify }}
+}
+</script>

@@ -1,0 +1,9 @@
+{%- assign p = site.data.profile -%}
+<ul class="link-list">
+  {%- if p.email and p.email != "" %}<li><a href="mailto:{{ p.email }}">Email</a></li>{% endif %}
+  {%- if p.cv and p.cv != "" %}<li><a href="{{ p.cv | relative_url }}" target="_blank" rel="noopener">CV</a></li>{% endif %}
+  {%- if p.github and p.github != "" %}<li><a href="https://github.com/{{ p.github }}">GitHub</a></li>{% endif %}
+  {%- if p.scholar and p.scholar != "" %}<li><a href="{{ p.scholar }}">Google Scholar</a></li>{% endif %}
+  {%- if p.orcid and p.orcid != "" %}<li><a href="https://orcid.org/{{ p.orcid }}">ORCID</a></li>{% endif %}
+  {%- if p.linkedin and p.linkedin != "" %}<li><a href="{{ p.linkedin }}">LinkedIn</a></li>{% endif %}
+</ul>

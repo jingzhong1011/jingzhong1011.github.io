@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<div class="reading-progress" aria-hidden="true"></div>
+
+<article class="post container container--reading">
+  <header class="post-header">
+    <a class="back-link" href="{{ "/blog/" | relative_url }}">Blog</a>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {%- for tag in page.tags %}
+      <span class="chip">{{ tag }}</span>
+      {%- endfor %}
+    </div>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
+
+<aside class="post-toc" hidden>
+  <p class="post-toc-title">Contents</p>
+  <nav id="toc"></nav>
+</aside>

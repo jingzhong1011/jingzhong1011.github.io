@@ -1,0 +1,25 @@
+# Profile — used on the home page, in the footer, and in search-engine metadata.
+# Any field set to "" is hidden on the site.
+# Fields marked SAMPLE hold placeholder values — replace them before publishing.
+
+name: Jing-Zhong Wang
+citation_name: "Wang, J. Z."      # bolded wherever it appears in an author list
+headline: Health Data Scientist
+affiliation: "Research Assistant, Institute of Epidemiology and Preventive Medicine, National Taiwan University"
+status:                # optional — e.g. "Applying to PhD programs for Fall 2027."; shown under your name
+photo: /assets/img/bio.png
+
+# Links
+email: jzwang1011@gmail.com
+cv: /assets/pdf/cv_jzwang.pdf                              # placeholder PDF — overwrite the file with your real CV
+github: jingzhong1011
+scholar: ""   # SAMPLE — full Google Scholar profile URL
+orcid: "0009-0004-5016-3219"
+linkedin: "https://www.linkedin.com/in/jingzhong-wang"     # full URL, including https://
+
+interests:
+  - Mortality & life expectancy
+  - Small-area & spatiotemporal modeling
+  - Bayesian methods
+  - Population health metrics
+  - Burden of disease

@@ -1,0 +1,49 @@
+# === Basic Information ===
+title: Jing-Zhong Wang
+description: >-
+  Jing-Zhong Wang — health data scientist working on mortality and life
+  expectancy, small-area and spatiotemporal modeling, and Bayesian methods
+  for population health.
+author: Jing-Zhong Wang
+lang: en
+timezone: Asia/Taipei
+
+# === Custom Jekyll Setting ===
+markdown: kramdown
+kramdown:
+  parse_block_html: true  
+  input: GFM 
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+
+# === Plugins ===
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# === Defalts for posts ===
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      lang: zh-TW
+  # Linkable, but not advertised to search engines as a standalone result.
+  - scope:
+      path: "assets/pdf"
+    values:
+      sitemap: false
+
+# === URL ===
+# Absolute base URL. Without this, sitemap.xml and feed.xml emit localhost:4000.
+url: https://jingzhong1011.github.io
+baseurl: ""
+
+# Exclude
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

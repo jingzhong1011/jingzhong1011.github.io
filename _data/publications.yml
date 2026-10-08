@@ -1,0 +1,44 @@
+# Publications — rendered on /research/ (grouped by status) and on the home page (selected: true).
+#
+# status:   published | review | preparation
+# authors:  your citation_name from profile.yml is bolded automatically
+# links:    any number of { label, url } — e.g. DOI, PubMed, Preprint, Code, Slides
+# tools:    shown as small grey text
+
+- title: "Evolving drivers of geographic inequalities in life expectancy under universal health coverage: a nationwide spatiotemporal analysis of Taiwan, 2000–2021"
+  authors: "Wang, J. Z., Liu, P. C., Bennett, J. E., Lo, W. C., Lu, T. T., Ezzati, M., Chiang, T. L., & Lin, H. H."
+  status: review
+  summary: Small-area life expectancy inequality under universal health insurance coverage, decomposed by cause of death across 358 townships.
+  tools: [R, Python, SAS]
+  selected: true
+
+- title: "Uneven progress in survival across high-income Asia: a comparative analysis of age, cause, and geographic inequalities"
+  authors: "Wang, J. Z., Nomura, S., Chang, A. Y., & Lin, H. H."
+  status: review
+  summary: "A comparative analysis decomposing life expectancy gains and subnational survival disparities across four high-income Asian countries: Taiwan, Japan, South Korea, and Singapore."
+  tools: [R]
+  selected: true
+
+- title: "Disease burden of neurodegenerative disorders in Taiwan"
+  authors: "Fan, S. P., Liu, P. C., Wang, J. Z., Lin, C. H., & Lin, H. H."
+  venue: Journal of the Formosan Medical Association
+  year: 2026
+  status: published
+  note: Advance online publication.
+  links:
+    - label: DOI
+      url: https://doi.org/10.1016/j.jfma.2026.01.020
+  tools: [R]
+  selected: true
+
+- title: "Epidemiological burden of Alzheimer's and Parkinson's diseases in East Asia: A comparative review of global burden of disease estimates and national registry data"
+  authors: "Fan, S. P., Liu, P. C., Wang, J. Z., Win, N. N., Lin, C. H., & Lin, H. H."
+  venue: Journal of the Formosan Medical Association
+  year: 2026
+  status: published
+  note: Advance online publication.
+  links:
+    - label: DOI
+      url: https://doi.org/10.1016/j.jfma.2026.03.072
+  tools: [R]
+  selected: true

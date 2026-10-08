@@ -1,0 +1,43 @@
+current directory: /Users/jing-zhongwang/Desktop/AI workplace/jingzhong1011.github.io/vendor/bundle/ruby/3.2.0/gems/rbs-4.1.3/ext/rbs_extension
+/Users/jing-zhongwang/.rubies/ruby-3.2.0/bin/ruby -I /Users/jing-zhongwang/.rubies/ruby-3.2.0/lib/ruby/3.2.0 extconf.rb
+/Users/jing-zhongwang/.rubies/ruby-3.2.0/bin/ruby: warning: Ruby was built without YJIT support. You may need to install rustc to build Ruby with YJIT.
+checking for whether -std=gnu99 is accepted as CFLAGS... yes
+checking for whether -Wimplicit-fallthrough is accepted as CFLAGS... yes
+checking for whether -Wunused-result is accepted as CFLAGS... yes
+checking for whether -Wc++-compat is accepted as CFLAGS... yes
+checking for whether -Wnullable-to-nonnull-conversion is accepted as CFLAGS... yes
+checking for whether -DNDEBUG is accepted as CFLAGS... yes
+creating Makefile
+
+current directory: /Users/jing-zhongwang/Desktop/AI workplace/jingzhong1011.github.io/vendor/bundle/ruby/3.2.0/gems/rbs-4.1.3/ext/rbs_extension
+make DESTDIR\= sitearchdir\=./.gem.20261007-39206-nk7562 sitelibdir\=./.gem.20261007-39206-nk7562 clean
+
+current directory: /Users/jing-zhongwang/Desktop/AI workplace/jingzhong1011.github.io/vendor/bundle/ruby/3.2.0/gems/rbs-4.1.3/ext/rbs_extension
+make DESTDIR\= sitearchdir\=./.gem.20261007-39206-nk7562 sitelibdir\=./.gem.20261007-39206-nk7562
+compiling ./../../src/ast.c
+compiling ./../../src/lexer.c
+compiling ./../../src/lexstate.c
+compiling ./../../src/location.c
+compiling ./../../src/parser.c
+compiling ./../../src/serialize.c
+compiling ./../../src/string.c
+compiling ./../../src/util/rbs_allocator.c
+compiling ./../../src/util/rbs_assert.c
+compiling ./../../src/util/rbs_buffer.c
+compiling ./../../src/util/rbs_constant_pool.c
+compiling ./../../src/util/rbs_encoding.c
+compiling ./../../src/util/rbs_unescape.c
+compiling ast_translation.c
+compiling class_constants.c
+compiling legacy_location.c
+compiling main.c
+compiling rbs_string_bridging.c
+linking shared-object rbs_extension.bundle
+ld: warning: -multiply_defined is obsolete
+
+current directory: /Users/jing-zhongwang/Desktop/AI workplace/jingzhong1011.github.io/vendor/bundle/ruby/3.2.0/gems/rbs-4.1.3/ext/rbs_extension
+make DESTDIR\= sitearchdir\=./.gem.20261007-39206-nk7562 sitelibdir\=./.gem.20261007-39206-nk7562 install
+/usr/bin/install -c -m 0755 rbs_extension.bundle ./.gem.20261007-39206-nk7562
+
+current directory: /Users/jing-zhongwang/Desktop/AI workplace/jingzhong1011.github.io/vendor/bundle/ruby/3.2.0/gems/rbs-4.1.3/ext/rbs_extension
+make DESTDIR\= sitearchdir\=./.gem.20261007-39206-nk7562 sitelibdir\=./.gem.20261007-39206-nk7562 clean
