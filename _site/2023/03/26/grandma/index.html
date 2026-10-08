@@ -2,7 +2,14 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>十四日間 | Jing-Zhong Wang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    // Apply a saved light/dark choice before first paint (no flash of the wrong theme).
+    try {
+      var theme = localStorage.getItem('theme');
+      if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+    } catch (e) {}
+  </script><title>十四日間 | Jing-Zhong Wang</title>
   <meta name="description" content="謹以此文懷念我的外婆。">
   <meta name="author" content="Jing-Zhong Wang">
   <link rel="canonical" href="http://localhost:4000/2023/03/26/grandma/">
@@ -29,16 +36,23 @@
       Jing-Zhong Wang
     </a>
 
-    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
-      <span></span><span></span>
-    </button>
-
+    <div class="header-actions">
     <nav class="site-nav" id="site-nav">
       <a href="/" class="nav-item">About</a>
       <a href="/research/" class="nav-item">Research</a>
       <a href="/blog/" class="nav-item is-active">Blog</a>
       <a href="/assets/pdf/cv_jzwang.pdf" class="nav-item" target="_blank" rel="noopener">CV</a>
     </nav>
+
+    <button class="theme-toggle" type="button" aria-label="Switch color theme">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+    </button>
+
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span>
+    </button>
+    </div>
   </div>
 </header>
 

@@ -22,6 +22,7 @@
   --accent: #0066cc;
   --accent-hover: #0077ed;
   --accent-soft: rgba(0, 113, 227, 0.08);
+  --on-accent: #ffffff;
   /* Status dots on publications */
   --ok: #248a3d;
   --pending: #c26b00;
@@ -54,6 +55,7 @@
   --accent: #2997ff;
   --accent-hover: #47a6ff;
   --accent-soft: rgba(41, 151, 255, 0.14);
+  --on-accent: #000000;
   --ok: #30d158;
   --pending: #ff9f0a;
 
@@ -194,7 +196,7 @@ img { max-width: 100%; height: auto; }
 }
 button.chip { cursor: pointer; transition: background 0.2s ease, color 0.2s ease; }
 button.chip:hover { color: var(--text); }
-button.chip.is-active { background: var(--accent); color: #ffffff; }
+button.chip.is-active { background: var(--accent); color: var(--on-accent); }
 
 .chip-list { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 0; padding: 0; }
 

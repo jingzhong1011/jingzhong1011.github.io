@@ -8,7 +8,7 @@
   {%- endif %}
   {%- if pub.venue or pub.note %}
   <p class="pub-venue">
-    {%- if pub.venue %}<i>{{ pub.venue }}</i>{% if pub.year %}, {{ pub.year }}{% endif %}. {% endif -%}
+    {%- if pub.venue %}<i>{{ pub.venue }}</i>{% if pub.year %}, {{ pub.year }}{% endif %}{% if pub.volume %}, {{ pub.volume }}{% endif %}{% if pub.pages %}, {{ pub.pages }}{% endif %}. {% endif -%}
     {{ pub.note }}
   </p>
   {%- endif %}

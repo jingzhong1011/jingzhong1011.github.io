@@ -2,6 +2,7 @@
 #
 # status:   published | review | preparation
 # authors:  your citation_name from profile.yml is bolded automatically
+# volume, pages: optional; shown after the year
 # links:    any number of { label, url } — e.g. DOI, PubMed, Preprint, Code, Slides
 # tools:    shown as small grey text
 
@@ -23,8 +24,9 @@
   authors: "Fan, S. P., Liu, P. C., Wang, J. Z., Lin, C. H., & Lin, H. H."
   venue: Journal of the Formosan Medical Association
   year: 2026
+  volume: 125
+  pages: S105–S115
   status: published
-  note: Advance online publication.
   links:
     - label: DOI
       url: https://doi.org/10.1016/j.jfma.2026.01.020
@@ -35,8 +37,9 @@
   authors: "Fan, S. P., Liu, P. C., Wang, J. Z., Win, N. N., Lin, C. H., & Lin, H. H."
   venue: Journal of the Formosan Medical Association
   year: 2026
+  volume: 125
+  pages: S5–S12
   status: published
-  note: Advance online publication.
   links:
     - label: DOI
       url: https://doi.org/10.1016/j.jfma.2026.03.072

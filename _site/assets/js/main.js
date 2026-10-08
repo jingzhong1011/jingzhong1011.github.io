@@ -9,6 +9,34 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // Light/dark toggle. Picking the same theme as the system clears the saved
+  // choice, so the site goes back to following the system.
+  const themeBtn = document.querySelector('.theme-toggle');
+  if (themeBtn) {
+    const root = document.documentElement;
+    const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const themeMetas = document.querySelectorAll('meta[name="theme-color"]');
+    const current = function () { return root.dataset.theme || (systemDark.matches ? 'dark' : 'light'); };
+    const sync = function () {
+      themeBtn.setAttribute('aria-label', current() === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+      const bg = getComputedStyle(root).getPropertyValue('--bg').trim();
+      themeMetas.forEach(function (m) { m.setAttribute('content', bg); });
+    };
+    themeBtn.addEventListener('click', function () {
+      const next = current() === 'dark' ? 'light' : 'dark';
+      const system = systemDark.matches ? 'dark' : 'light';
+      try {
+        if (next === system) localStorage.removeItem('theme');
+        else localStorage.setItem('theme', next);
+      } catch (e) {}
+      if (next === system) delete root.dataset.theme;
+      else root.dataset.theme = next;
+      sync();
+    });
+    systemDark.addEventListener('change', sync);
+    sync();
+  }
+
   // Blog: filter posts by tag, hiding years left empty
   const chips = document.querySelectorAll('.filter .chip');
   chips.forEach(function (chip) {
