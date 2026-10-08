@@ -38,9 +38,10 @@ description: Publications, manuscripts, and research software by Jing-Zhong Wang
     <div class="section-body">
       {%- for item in items %}
       <article class="pub">
-        <h3 class="pub-title"><a href="{{ item.url }}">{{ item.name }}</a></h3>
-        <p class="pub-summary">{{ item.description }}</p>
-        <div class="pub-meta">
+        <h3 class="pub-title"><a href="{{ item.demo | default: item.url }}">{{ item.name }}</a></h3>
+          <p class="pub-summary">{{ item.description }}</p>
+          <div class="pub-meta">
+          {%- if item.demo %}<a class="pub-link" href="{{ item.demo }}">Live demo</a>{% endif %}
           <a class="pub-link" href="{{ item.url }}">GitHub</a>
           {%- if item.tools %}<span class="tools">{{ item.tools | join: " · " }}</span>{% endif %}
         </div>

@@ -7,3 +7,9 @@
   tools: [R]
   group: software
 
+- name: LEvis
+  url: https://github.com/jingzhong1011/LEvis
+  demo: https://jingzhong1011.github.io/LEvis/
+  description: Interactive maps of township life expectancy in Taiwan, 2000–2021, with a year slider and top/bottom rankings. Demo with simulated data.
+  tools: [JavaScript, Highcharts, Python]
+  group: earlier
