@@ -4,18 +4,18 @@
 
 name: Jing-Zhong Wang
 citation_name: "Wang, J. Z."      # bolded wherever it appears in an author list
-headline: Biostatistician
+headline: Applied Biostatistician
 affiliation: "Research Associate, Institute of Epidemiology and Preventive Medicine, National Taiwan University"
-status:                # optional — e.g. "Applying to PhD programs for Fall 2027."; shown under your name
+status: "Applying to PhD programs for Fall 2027."
 photo: /assets/img/bio.png
 
 # Links
 email: jzwang1011@gmail.com
-cv: /assets/pdf/cv_jzwang.pdf                              # placeholder PDF — overwrite the file with your real CV
+cv: /assets/pdf/cv_jzwang.pdf
 github: jingzhong1011
-scholar: ""   # SAMPLE — full Google Scholar profile URL
+scholar: "" 
 orcid: "0009-0004-5016-3219"
-linkedin: "https://www.linkedin.com/in/jingzhong-wang"     # full URL, including https://
+linkedin: "https://www.linkedin.com/in/jingzhong-wang" 
 
 interests:
   - Mortality & life expectancy
