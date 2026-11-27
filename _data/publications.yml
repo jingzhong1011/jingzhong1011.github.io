@@ -1,6 +1,6 @@
 # Publications — rendered on /research/ (grouped by status) and on the home page (selected: true).
 #
-# status:   published | review | preparation
+# status:   published | accepted | review | preparation
 # authors:  your citation_name from profile.yml is bolded automatically
 # volume, pages: optional; shown after the year
 # links:    any number of { label, url } — e.g. DOI, PubMed, Preprint, Code, Slides

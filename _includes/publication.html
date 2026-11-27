@@ -20,6 +20,7 @@
     {%- if include.status %}
     {%- case pub.status -%}
       {%- when "published" %}{% assign status_label = "Published" -%}
+      {%- when "accepted" %}{% assign status_label = "Accepted" -%}
       {%- when "review" %}{% assign status_label = "Under review" -%}
       {%- else %}{% assign status_label = "In preparation" -%}
     {%- endcase %}
