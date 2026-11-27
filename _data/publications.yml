@@ -8,7 +8,7 @@
 
 - title: "Evolving drivers of geographic inequalities in life expectancy under universal health coverage: a nationwide spatiotemporal analysis of Taiwan, 2000–2021"
   authors: "Wang, J. Z., Liu, P. C., Bennett, J. E., Lo, W. C., Lu, T. T., Ezzati, M., Chiang, T. L., & Lin, H. H."
-  status: review
+  status: accepted
   summary: Small-area life expectancy inequality under universal health insurance coverage, decomposed by cause of death across 358 townships.
   tools: [R, Python, SAS]
   selected: true

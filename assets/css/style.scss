@@ -267,6 +267,7 @@ button.chip.is-active { background: var(--accent); color: var(--on-accent); }
 .pub-status { display: inline-flex; align-items: center; gap: 6px; color: var(--text-2); }
 .pub-status::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--text-3); }
 .pub-status--published::before { background: var(--ok); }
+.pub-status--accepted::before { background: var(--ok); }
 .pub-status--review::before { background: var(--pending); }
 .tools { color: var(--text-3); }
 

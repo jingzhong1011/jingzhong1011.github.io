@@ -14,7 +14,7 @@ description: Publications, manuscripts, and research software by Jing-Zhong Wang
   <section class="section">
     <h2 class="section-title">Publications</h2>
     <div class="section-body">
-      {%- assign groups = "published|Published,review|Under review,preparation|In preparation" | split: "," %}
+      {%- assign groups = "published|Published,accepted|Accepted,review|Under review,preparation|In preparation" | split: "," %}
       {%- for group in groups %}
         {%- assign g = group | split: "|" %}
         {%- assign pubs = site.data.publications | where: "status", g[0] %}
